@@ -1,6 +1,11 @@
 <template>
     <header>
-        <span style="color: #fff">HEADER</span>
+        <div class="container">
+            <button class="open-menu">
+                <font-awesome-icon :icon="['fas', 'bars']" class="open-menu--icon" />
+            </button>
+            <div class="logo-wrapper"></div>
+        </div>
     </header>
 </template>
 
