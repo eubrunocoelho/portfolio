@@ -1,0 +1,93 @@
+/**
+ * =================================================================================
+ * SUMMARY
+ * =================================================================================
+ */
+
+.summary {
+    background: var(--summary-background-color);
+    padding: 130px 18px 140px 18px;
+    width: 100%;
+
+    .box {
+        background: var(--summary-box-backgrond-color);
+        border: 2px solid var(--summary-box-border-color);
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        padding: 26px 26px 26px 26px;
+
+        .cover {
+            background: var(--summary-box-cover-color);
+            border-radius: 5px;
+            height: 304px;
+            margin: 0 0 36px 0;
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            hgroup {
+                font-family: var(--font-rajdhani);
+                margin: 0 0 12px 0;
+
+                h1 {
+                    color: var(--summary-box-subtitle-color);
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+
+                h2 {
+                    color: var(--summary-box-title-color);
+                    font-size: 28px;
+                    font-weight: 500;
+                    margin: 0 0 10px 0;
+                }
+            }
+
+            .about {
+                color: var(--summary-box-about-text-color);
+                font-family: var(--font-archivo);
+                margin: 0 0 36px 0;
+
+                h1 {
+                    font-size: 22px;
+                    font-weight: 200;
+                    margin: 0 0 8px 0;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 200;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            .social {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: start;
+                width: 100%;
+
+                .social-box {
+                    align-items: center;
+                    background: var(--summary-box-social-box-color);
+                    border: 2px solid var(--summary-box-social-border-color);
+                    border-radius: 5px;
+                    display: flex;
+                    height: 72px;
+                    justify-content: center;
+                    width: 72px;
+                }
+
+                .social-icon {
+                    color: var(--summary-box-social-icon-color);
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+}
