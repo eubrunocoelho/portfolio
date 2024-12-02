@@ -19,6 +19,7 @@
         margin: 0 auto;
         max-width: 1148px;
         padding: 26px 26px 26px 26px;
+        width: 100%;
 
         .cover {
             background: var(--summary-box-cover-color);
@@ -54,7 +55,7 @@
             .about {
                 color: var(--summary-box-about-text-color);
                 font-family: var(--font-archivo);
-                margin: 0 0 36px 0;
+                margin: 0 0 20px 0;
 
                 h1 {
                     font-size: 22px;
@@ -96,6 +97,56 @@
     }
 }
 
+@media screen and (min-width: 480px) {
+    .summary {
+        padding: 130px 20px 140px 20px;
+
+        .box {
+            .content {
+                hgroup {
+                    h1 {
+                        font-size: 40px;
+                    }
+
+                    h2 {
+                        font-size: 34px;
+                    }
+                }
+            }
+
+            .about {
+                h1 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .summary {
+        padding: 130px 20px 140px 20px;
+
+        .box {
+            .content {
+                hgroup {
+                    h1 {
+                        font-size: 48px;
+                    }
+
+                    h2 {
+                        font-size: 44px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .summary {
         .box {
@@ -123,14 +174,6 @@
 
                 .about {
                     margin: 0 0 16px 0;
-
-                    h1 {
-                        font-size: 24px;
-                    }
-
-                    p {
-                        font-size: 22px;
-                    }
                 }
             }
         }
