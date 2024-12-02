@@ -8,16 +8,23 @@
     align-items: center;
     background: var(--presentation-background-color);
     display: flex;
-    flex-direction: column;
     padding: 116px 24px 80px 24px;
     width: 100%;
+
+    .wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
 
     hgroup {
         align-items: center;
         display: flex;
         flex-direction: column;
         font-family: var(--font-rajdhani);
-        margin: 0 0 20px 0;
+        margin: 0 0 18px 0;
         text-align: center;
         width: 100%;
 
@@ -42,5 +49,57 @@
         font-weight: 200;
         margin: 0 0 20px 0;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .presentation {
+        padding: 116px 25px 80px 25px;
+
+        .wrapper {
+            max-width: 600px;
+        }
+
+        hgroup {
+            margin: 0 0 20px 0;
+
+            h1 {
+                font-size: 62px;
+                margin: 0 0 20px 0;
+            }
+
+            h2 {
+                font-size: 50px;
+            }
+        }
+
+        .text {
+            font-size: 24px;
+            margin: 0 0 24px 0;
+        }
+
+        .btn {
+            &--custom-width {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .presentation {
+        padding: 160px 30px 80px 30px;
+
+        hgroup {
+            margin: 0 0 25px 0;
+
+            h1 {
+                font-size: 72px;
+            }
+
+            h2 {
+                font-size: 60px;
+            }
+        }
     }
 }
