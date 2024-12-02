@@ -52,6 +52,14 @@ header {
     }
 }
 
+@media screen and (min-width: 480px) {
+    header {
+        .container {
+            padding: 0 20px 0 0;
+        }
+    }
+}
+
 @media screen and (min-width: 902px) {
     header {
         .container {

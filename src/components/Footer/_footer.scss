@@ -9,7 +9,11 @@ footer {
 
     .footer-top {
         background: var(--footer-top-background-color);
-        padding: 20px 18px 20px 18px;
+
+        .container {
+            max-width: 0 auto;
+            padding: 20px 18px 20px 18px;
+        }
 
         .social {
             display: flex;
