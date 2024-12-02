@@ -26,6 +26,14 @@
                 </ul>
             </div>
         </div>
+        <div class="footer-copy">
+            <div class="container">
+                <p>
+                    <span class="copy-symbol">©</span>2024 <span class="author">Bruno Coelho</span> | Todos os direitos
+                    reservados.
+                </p>
+            </div>
+        </div>
     </footer>
 </template>
 
