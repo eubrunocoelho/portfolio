@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { createApp } from 'vue';
 
 import App from './App.vue';
-import './assets/scss/styles.scss';
+import './assets/scss/global.scss';
 
 const IoniconsModuleScript = document.createElement('script');
 const IoniconsNomoduleScript = document.createElement('script');
