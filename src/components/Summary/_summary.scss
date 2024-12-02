@@ -15,11 +15,15 @@
         border-radius: 6px;
         display: flex;
         flex-direction: column;
+        height: 100%;
+        margin: 0 auto;
+        max-width: 1148px;
         padding: 26px 26px 26px 26px;
 
         .cover {
             background: var(--summary-box-cover-color);
             border-radius: 5px;
+            display: flex;
             height: 304px;
             margin: 0 0 36px 0;
             width: 100%;
@@ -31,7 +35,7 @@
 
             hgroup {
                 font-family: var(--font-rajdhani);
-                margin: 0 0 12px 0;
+                margin: 0 0 6px 0;
 
                 h1 {
                     color: var(--summary-box-subtitle-color);
@@ -43,7 +47,7 @@
                     color: var(--summary-box-title-color);
                     font-size: 28px;
                     font-weight: 500;
-                    margin: 0 0 10px 0;
+                    margin: 0 0 6px 0;
                 }
             }
 
@@ -55,7 +59,7 @@
                 h1 {
                     font-size: 22px;
                     font-weight: 200;
-                    margin: 0 0 8px 0;
+                    margin: 0 0 24px 0;
                 }
 
                 p {
@@ -86,6 +90,47 @@
                 .social-icon {
                     color: var(--summary-box-social-icon-color);
                     font-size: 42px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .summary {
+        .box {
+            flex-direction: row;
+
+            .cover {
+                height: 500px;
+                margin: 0 44px 0 0;
+                width: 480px;
+            }
+
+            .content {
+                flex: 1;
+                margin: 46px 0 0 0;
+
+                hgroup {
+                    h1 {
+                        font-size: 52px;
+                    }
+
+                    h2 {
+                        font-size: 36px;
+                    }
+                }
+
+                .about {
+                    margin: 0 0 16px 0;
+
+                    h1 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 22px;
+                    }
                 }
             }
         }
