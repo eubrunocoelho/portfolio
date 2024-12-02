@@ -6,7 +6,7 @@
 
 .summary {
     background: var(--summary-background-color);
-    padding: 130px 18px 140px 18px;
+    padding: 86px 18px 140px 18px;
     width: 100%;
 
     .box {
@@ -99,7 +99,7 @@
 
 @media screen and (min-width: 480px) {
     .summary {
-        padding: 130px 20px 140px 20px;
+        padding: 86px 20px 140px 20px;
 
         .box {
             .content {
