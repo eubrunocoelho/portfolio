@@ -1,0 +1,19 @@
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
+
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent !important;
+    box-sizing: border-box !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+body {
+    background: var(--background-color);
+    height: 100%;
+    width: 100%;
+}
