@@ -1,0 +1,23 @@
+/**
+ * =================================================================================
+ * COMPONENTS
+ * =================================================================================
+ */
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-rajdhani);
+    font-size: 21px;
+    font-weight: 700;
+    height: 56px;
+    outline: none;
+    padding: 0 20px 0 20px;
+    text-transform: capitalize;
+    width: max-content;
+}
+
+.btn-primary {
+    background: var(--button-background-color);
+    border: 2px solid var(--button-border-color);
+}

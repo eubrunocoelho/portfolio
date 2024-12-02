@@ -1,0 +1,46 @@
+/**
+ * =================================================================================
+ * PRESENTATION
+ * =================================================================================
+ */
+
+.presentation {
+    align-items: center;
+    background: var(--presentation-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 116px 24px 80px 24px;
+    width: 100%;
+
+    hgroup {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-rajdhani);
+        margin: 0 0 20px 0;
+        text-align: center;
+        width: 100%;
+
+        h1 {
+            color: var(--presentation-title-color);
+            font-size: 46px;
+            font-weight: 700;
+            margin: 0 0 18px 0;
+        }
+
+        h2 {
+            color: var(--presentation-subtitle-color);
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+
+    .text {
+        color: var(--presentation-text-color);
+        font-family: var(--font-archivo);
+        font-size: 20px;
+        font-weight: 200;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+}
