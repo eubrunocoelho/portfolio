@@ -8,21 +8,10 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import './assets/scss/global.scss';
 
-const IoniconsModuleScript = document.createElement('script');
-const IoniconsNomoduleScript = document.createElement('script');
-
-IoniconsModuleScript.setAttribute('type', 'module');
-IoniconsModuleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js');
-
-IoniconsNomoduleScript.setAttribute('nomodule', '');
-IoniconsNomoduleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js');
-
-document.head.appendChild(IoniconsModuleScript);
-document.head.appendChild(IoniconsNomoduleScript);
-
 library.add(fas, fab, far);
 dom.watch();
 
 const app = createApp(App);
+app.config.ignoredElements = [/^ion-/];
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.mount('#app');
