@@ -12,13 +12,25 @@
     padding: 0 18px 128px 18px;
     width: 100%;
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+    }
+
+    .previous,
+    .next {
+        display: none;
+    }
+
     .project-item {
         align-items: center;
         display: flex;
         flex-direction: column;
         height: 100%;
         padding: 0 10px 0 10px;
-        margin: 0 0 20px 0;
         width: 100%;
 
         .project-box {
@@ -63,6 +75,7 @@
     .ellipses {
         display: flex;
         justify-content: center;
+        margin: 20px 0 0 0;
         width: 100%;
 
         .wrapper {
@@ -123,6 +136,34 @@
                     max-width: 270px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .projects {
+
+        .previous,
+        .next {
+            align-items: center;
+            display: flex;
+            height: 56px;
+            justify-content: center;
+            position: absolute;
+            width: 56px;
+
+            &--icon {
+                color: var(--projects-chevron-color);
+                font-size: 40px;
+            }
+        }
+
+        .previous {
+            left: -56px;
+        }
+
+        .next {
+            right: -56px;
         }
     }
 }
