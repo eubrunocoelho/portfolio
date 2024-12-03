@@ -14,7 +14,7 @@
 
     .wrapper {
         display: grid;
-        gap: 50px;
+        row-gap: 30px;
         grid-template-columns: 1fr;
         width: 100%;
 
@@ -40,6 +40,42 @@
                 flex-wrap: wrap;
                 gap: 20px;
             }
+
+            .technology-box {
+                align-items: center;
+                background: var(--technology-background-color);
+                border: 2px solid var(--technology-border-color);
+                border-radius: 5px;
+                display: flex;
+                height: 70px;
+                justify-content: center;
+                width: 70px;
+            }
+
+            .language-img {
+                filter: var(--technology-icon-color);
+                height: 40px;
+                width: 40px;
+            }
         }
     }
+}
+
+@media screen and (min-width: 706px) {
+    .technologies {
+        .wrapper {
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .technologies {
+        .wrapper {
+            gap: 50px;
+            max-width: 1040px;
+        }
+    }
+
 }
