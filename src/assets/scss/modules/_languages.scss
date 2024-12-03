@@ -1,0 +1,32 @@
+/**
+ * =================================================================================
+ * LANGUAGES
+ * =================================================================================
+ */
+
+.language-box {
+    display: inline-block;
+    filter: var(--language-icon-color);
+    height: 18px;
+    width: 18px;
+
+    &--vue {
+        background: url(../img/languages/vuejs.svg) center no-repeat;
+        background-size: 18px 18px;
+    }
+
+    &--css {
+        background: url(../img/languages/css.svg) center no-repeat;
+        background-size: 18px 18px;
+    }
+
+    &--sass {
+        background: url(../img/languages/sass.svg) center no-repeat;
+        background-size: 18px 18px;
+    }
+
+    &--js {
+        background: url(../img/languages/js.svg) center no-repeat;
+        background-size: 18px 18px;
+    }
+}
