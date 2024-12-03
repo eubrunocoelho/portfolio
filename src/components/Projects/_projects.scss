@@ -1,0 +1,49 @@
+/**
+ * =================================================================================
+ * PROJECTS
+ * =================================================================================
+ */
+
+.projects {
+    align-items: center;
+    background: var(--projects-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 128px 18px;
+    width: 100%;
+
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 0 10px;
+        width: 100%;
+
+        .project-box {
+            background: var(--projects-img-box-color);
+            border-radius: 5px;
+            display: block;
+            height: 220px;
+            margin: 0 0 36px 0;
+            width: 100%;
+        }
+
+        h1 {
+            color: var(--projects-title-color);
+            font-family: var(--font-rajdhani);
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+        }
+
+        .about {
+            .text {
+                color: var(--projects-about-text);
+                font-family: var(--font-archivo);
+                font-size: 20px;
+                font-weight: 200;
+                margin: 0 0 15px 0;
+            }
+        }
+    }
+}
