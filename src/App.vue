@@ -6,6 +6,7 @@
         <VueServices></VueServices>
         <VueProjects></VueProjects>
         <VueTechnologies></VueTechnologies>
+        <VueContact></VueContact>
     </main>
     <VueFooter></VueFooter>
 </template>
@@ -17,10 +18,20 @@ import VueSummary from './components/Summary/Summary.vue';
 import VueServices from './components/Services/Services.vue';
 import VueProjects from './components/Projects/Projects.vue';
 import VueTechnologies from './components/Technologies/Technologies.vue';
+import VueContact from './components/Contact/Contact.vue';
 import VueFooter from './components/Footer/Footer.vue';
 
 export default {
     name: 'App',
-    components: { VueHeader, VuePresentation, VueSummary, VueServices, VueProjects, VueTechnologies, VueFooter },
+    components: {
+        VueHeader,
+        VuePresentation,
+        VueSummary,
+        VueServices,
+        VueProjects,
+        VueTechnologies,
+        VueContact,
+        VueFooter,
+    },
 };
 </script>
