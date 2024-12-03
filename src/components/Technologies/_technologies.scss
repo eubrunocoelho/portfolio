@@ -1,0 +1,45 @@
+/**
+ * =================================================================================
+ * TECHNOLOGIES
+ * =================================================================================
+ */
+
+.technologies {
+    align-items: center;
+    background: var(--technologies-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 128px 18px;
+    width: 100%;
+
+    .wrapper {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr;
+        width: 100%;
+
+        .technology-card {
+            background: var(--technologies-card-background-color);
+            border: 2px solid var(--technologies-card-border-color);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 30px 30px 30px 30px;
+
+            .title {
+                color: var(--technologies-card-title-color);
+                font-family: var(--font-rajdhani);
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0 0 26px 0;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+    }
+}
