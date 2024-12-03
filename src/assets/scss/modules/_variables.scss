@@ -7,6 +7,8 @@
 :root {
     // APP
     --background-color: #121214;
+    --show-more-link: #007bff;
+    --show-more-chevron-color: invert(28%) sepia(56%) saturate(3341%) hue-rotate(201deg) brightness(105%) contrast(104%);
 
     // HEADER
     --header-background-color: #0c0c0d;
@@ -35,6 +37,10 @@
 
     // SERVICES
     --services-background-color: #0e0e10;
+    --services-card-background-color: #0e0e10;
+    --services-card-border-color: #19191b;
+    --services-card-icon-color: #007bff;
+    --services-card-title-color: #ffffff;
 
     // FOOTER
     --footer-top-background-color: #111113;
@@ -48,6 +54,10 @@
     // BUTTONS
     --button-background-color: #007bff;
     --button-border-color: #5696da;
+
+    // TITLE
+    --title-text: #007bff;
+    --title-dot: #ffffff;
 
     // FONTS
     --font-archivo: 'Archivo', sans-serif;

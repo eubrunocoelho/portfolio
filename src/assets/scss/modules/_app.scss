@@ -17,3 +17,42 @@ main {
     height: 100%;
     width: 100%;
 }
+
+section {
+    .section-title {
+        color: var(--title-text);
+        font-family: var(--font-rajdhani);
+        font-size: 52px;
+        font-weight: 700;
+
+        .dot {
+            color: var(--title-dot);
+        }
+    }
+
+    .title-spacing {
+        padding: 44px 0 46px 0;
+    }
+}
+
+.show-more {
+    align-items: center;
+    color: var(--show-more-link);
+    display: flex;
+    font-family: var(--font-rajdhani);
+    font-size: 21px;
+    font-weight: 500;
+    text-decoration: none;
+
+    &::after {
+        content: '';
+        background: url(../img/arrow-right.svg) center no-repeat;
+        background-size: 15px 15px;
+        display: inline-block;
+        filter: var(--show-more-chevron-color);
+        height: 15px;
+        margin: 0 0 0 12px;
+        vertical-align: middle;
+        width: 15px;
+    }
+}
