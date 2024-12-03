@@ -3,3 +3,29 @@
  * SERVICES
  * =================================================================================
  */
+
+.services {
+    width: 100%;
+
+    .waves {
+        height: 160px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .object {
+            bottom: -42px;
+            height: inherit;
+            object-fit: contain;
+            position: absolute;
+            transform: scale(1.8);
+            width: 100%;
+        }
+    }
+
+    .content {
+        height: 70px;
+        background: var(--services-background-color);
+        width: 100%;
+    }
+}

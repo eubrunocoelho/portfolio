@@ -1,6 +1,9 @@
 <template>
     <section class="services">
-        <img src="../../assets/img/waves.svg" onload="SVGInject(this)" />
+        <div class="waves">
+            <img src="../../assets/img/waves.svg" class="object" onload="SVGInject(this)" />
+        </div>
+        <div class="content"></div>
     </section>
 </template>
 
