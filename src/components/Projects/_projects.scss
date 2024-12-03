@@ -86,6 +86,7 @@
         .ellipse {
             background: var(--projects-ellipse-color);
             border-radius: 50%;
+            cursor: pointer;
             height: 10px;
             width: 10px;
 
@@ -146,6 +147,7 @@
         .previous,
         .next {
             align-items: center;
+            cursor: pointer;
             display: flex;
             height: 56px;
             justify-content: center;
