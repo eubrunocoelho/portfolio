@@ -15,6 +15,7 @@
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
+        row-gap: 40px;
         width: 100%;
 
         form {
@@ -72,6 +73,51 @@
 
             button {
                 width: 100%;
+            }
+        }
+
+        .info {
+            .info-card {
+                background: var(--info-card-background-color);
+                border: 2px solid var(--info-card-border-color);
+                border-radius: 6px;
+                display: flex;
+                height: 84px;
+                width: 100%;
+            }
+
+            .icon-box {
+                align-items: center;
+                display: flex;
+                height: 84px;
+                justify-content: center;
+                width: 84px;
+
+                &--icon {
+                    color: var(--info-card-icon-color);
+                    font-size: 50px;
+                }
+            }
+
+            .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .title {
+                    color: var(--info-card-title-color);
+                    font-family: var(--font-rajdhani);
+                    font-size: 29px;
+                    font-weight: 700;
+                    margin: 0 0 6px 0;
+                }
+
+                .description {
+                    color: var(--info-card-description-color);
+                    font-family: var(--font-archivo);
+                    font-size: 14px;
+                    font-weight: 200;
+                }
             }
         }
     }
