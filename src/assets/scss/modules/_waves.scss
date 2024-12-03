@@ -1,0 +1,91 @@
+/**
+ * =================================================================================
+ * WAVES
+ * =================================================================================
+ */
+
+.waves {
+    display: flex;
+    height: 168px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .object {
+        bottom: -64px;
+        height: inherit;
+        object-fit: contain;
+        position: absolute;
+        transform: scale(1.4);
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .waves {
+        height: 180px;
+
+        .object {
+            bottom: -62px;
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .waves {
+        height: 210px;
+
+        .object {
+            bottom: -68px;
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .waves {
+        .object {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .waves {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .waves {
+        height: 300px;
+
+        .object {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .waves {
+        height: 320px;
+
+        .object {
+            bottom: -80px;
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .waves {
+        bottom: -56px;
+        height: 500px;
+
+        .object {
+            max-width: 1920px;
+        }
+    }
+}
