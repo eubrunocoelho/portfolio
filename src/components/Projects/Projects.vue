@@ -3,8 +3,8 @@
         <h1 class="section-title title-spacing">Projetos<span class="dot">.</span></h1>
         <div class="project-item">
             <span class="project-box"></span>
-            <h1 class="title">Página Pessoal Minimalista</h1>
             <div class="about">
+                <h1 class="title">Página Pessoal Minimalista</h1>
                 <p class="text">
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit
                     hendrerit.
