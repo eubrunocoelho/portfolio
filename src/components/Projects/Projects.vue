@@ -17,23 +17,31 @@
                         hendrerit.
                     </p>
                     <ul class="languages">
-                        <li class="language-box language-box--vue"></li>
-                        <li class="language-box language-box--js"></li>
-                        <li class="language-box language-box--css"></li>
-                        <li class="language-box language-box--sass"></li>
+                        <li class="language-box">
+                            <img src="../../assets/img/languages/vuejs.svg" class="language" />
+                        </li>
+                        <li class="language-box">
+                            <img src="../../assets/img/languages/js.svg" class="language" />
+                        </li>
+                        <li class="language-box">
+                            <img src="../../assets/img/languages/css.svg" class="language" />
+                        </li>
+                        <li class="language-box">
+                            <img src="../../assets/img/languages/sass.svg" class="language" />
+                        </li>
                     </ul>
                     <a href="#" class="show-more">Exibir mais</a>
                 </div>
             </div>
         </div>
-        <div class="ellipses">
+        <nav class="ellipses">
             <div class="wrapper">
                 <span class="ellipse"></span>
                 <span class="ellipse"></span>
                 <span class="ellipse ellipse--active"></span>
                 <span class="ellipse"></span>
             </div>
-        </div>
+        </nav>
     </section>
 </template>
 

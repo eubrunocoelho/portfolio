@@ -32,6 +32,9 @@
                         <img src="../../assets/img/languages/php.svg" class="language" />
                     </div>
                     <div class="technology-box">
+                        <img src="../../assets/img/languages/laravel.svg" class="language" />
+                    </div>
+                    <div class="technology-box">
                         <img src="../../assets/img/languages/nodejs.svg" class="language" />
                     </div>
                     <div class="technology-box">

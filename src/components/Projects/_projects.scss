@@ -55,11 +55,20 @@
                 column-gap: 10px;
                 display: flex;
                 margin: 0 0 16px 0;
+            }
 
-                .language {
-                    height: 25px;
-                    width: 25px;
-                }
+            .language-box {
+                align-items: center;
+                display: flex;
+                height: 18px;
+                justify-content: center;
+                width: 18px;
+            }
+
+            .language {
+                filter: var(--language-icon-color);
+                height: 18px;
+                width: 18px;
             }
         }
     }
