@@ -47,9 +47,9 @@ section {
     text-decoration: none;
 
     &::after {
-        content: '';
         background: url(../img/arrow-right.svg) center no-repeat;
         background-size: 15px 15px;
+        content: '';
         display: inline-block;
         filter: var(--show-more-chevron-color);
         height: 15px;
