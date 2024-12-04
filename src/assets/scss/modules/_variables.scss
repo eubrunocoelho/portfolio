@@ -7,15 +7,15 @@
 :root {
     // APP
     --background-color: #121214;
-    --show-more-link: #007bff;
+    --show-more-link-color: #007bff;
     --show-more-chevron-color: invert(28%) sepia(56%) saturate(3341%) hue-rotate(201deg) brightness(105%) contrast(104%);
 
     // HEADER
     --header-background-color: #0c0c0d;
     --header-border-color: #151518;
-    --header-open-menu-icon: #ffffff;
-    --header-logo-box: #0e0e10;
-    --header-nav-link: #b5bcc5;
+    --header-open-menu-icon-color: #ffffff;
+    --header-logo-box-color: #0e0e10;
+    --header-nav-link-color: #b5bcc5;
 
     // PRESENTATION
     --presentation-background-color: #0e0e10;
@@ -46,7 +46,7 @@
     --projects-background-color: #121214;
     --projects-img-box-color: #007bff;
     --projects-title-color: #ffffff;
-    --projects-about-text: #b5bcc5;
+    --projects-about-text-color: #b5bcc5;
     --projects-ellipse-color: #1b212c;
     --projects-ellipse-active-color: #007bff;
     --projects-chevron-color: #007bff;
@@ -61,7 +61,7 @@
     --contact-background-color: #121214;
 
     // FORM
-    --form-label-text: #b5bcc5;
+    --form-label-text-color: #b5bcc5;
     --form-input-background-color: #111113;
     --form-input-border-color: #19191b;
     --form-input-placeholder-text: #babcbf;
@@ -79,8 +79,8 @@
     --footer-top-social-box-border-color: #171719;
     --footer-top-social-icon-color: #007bff;
     --footer-copy-background-color: #0c0c0d;
-    --footer-copy-text: #b5bcc5;
-    --footer-copy-author: #007bff;
+    --footer-copy-text-color: #b5bcc5;
+    --footer-copy-author-color: #007bff;
 
     // LANGUAGES
     --language-icon-color: invert(91%) sepia(0%) saturate(0%) hue-rotate(155deg) brightness(94%) contrast(89%);
@@ -95,8 +95,8 @@
     --button-border-color: #5696da;
 
     // TITLE
-    --title-text: #007bff;
-    --title-dot: #ffffff;
+    --title-text-color: #007bff;
+    --title-dot-color: #ffffff;
 
     // FONTS
     --font-archivo: 'Archivo', sans-serif;

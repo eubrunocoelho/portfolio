@@ -22,13 +22,13 @@ main {
 
 section {
     .main-title {
-        color: var(--title-text);
+        color: var(--title-text-color);
         font-family: var(--font-rajdhani);
         font-size: 52px;
         font-weight: 700;
 
         .dot {
-            color: var(--title-dot);
+            color: var(--title-dot-color);
         }
 
         &--spacing {
@@ -39,7 +39,7 @@ section {
 
 .show-more {
     align-items: center;
-    color: var(--show-more-link);
+    color: var(--show-more-link-color);
     display: flex;
     font-family: var(--font-rajdhani);
     font-size: 21px;

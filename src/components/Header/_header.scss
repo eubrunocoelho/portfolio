@@ -36,13 +36,13 @@ header {
         width: 82px;
 
         &--icon {
-            color: var(--header-open-menu-icon);
+            color: var(--header-open-menu-icon-color);
             font-size: 24px;
         }
     }
 
     .logo-wrapper {
-        background: var(--header-logo-box);
+        background: var(--header-logo-box-color);
         border-radius: 4px;
         height: 50px;
         width: 98px;
@@ -83,7 +83,7 @@ header {
             }
 
             a {
-                color: var(--header-nav-link);
+                color: var(--header-nav-link-color);
                 font-size: 20px;
                 font-weight: 600;
                 padding: 0 16px 0 16px;

@@ -56,7 +56,7 @@ footer {
         }
 
         p {
-            color: var(--footer-copy-text);
+            color: var(--footer-copy-text-color);
             font-family: var(--font-rajdhani);
             font-weight: 700;
             text-align: center;
@@ -71,7 +71,7 @@ footer {
             }
 
             .author {
-                color: var(--footer-copy-author);
+                color: var(--footer-copy-author-color);
             }
         }
     }
