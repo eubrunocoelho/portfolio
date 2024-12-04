@@ -19,7 +19,7 @@ main {
 }
 
 section {
-    .section-title {
+    .main-title {
         color: var(--title-text);
         font-family: var(--font-rajdhani);
         font-size: 52px;
@@ -28,10 +28,10 @@ section {
         .dot {
             color: var(--title-dot);
         }
-    }
 
-    .title-spacing {
-        padding: 44px 0 46px 0;
+        &--spacing {
+            padding: 44px 0 46px 0;
+        }
     }
 }
 
