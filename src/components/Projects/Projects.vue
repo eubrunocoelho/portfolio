@@ -1,6 +1,6 @@
 <template>
     <section class="projects">
-        <h1 class="section-title title-spacing">Projetos<span class="dot">.</span></h1>
+        <h1 class="main-title main-title--spacing">Projetos<span class="dot">.</span></h1>
         <div class="container">
             <div class="previous">
                 <font-awesome-icon :icon="['fas', 'chevron-left']" class="previous--icon" />
@@ -8,7 +8,7 @@
             <div class="next">
                 <font-awesome-icon :icon="['fas', 'chevron-right']" class="next--icon" />
             </div>
-            <div class="project-item">
+            <div class="project">
                 <span class="project-box"></span>
                 <div class="about">
                     <h1 class="title">Página Pessoal Minimalista</h1>
