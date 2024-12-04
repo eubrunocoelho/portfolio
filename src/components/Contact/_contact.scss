@@ -9,7 +9,7 @@
     background: var(--contact-background-color);
     display: flex;
     flex-direction: column;
-    padding: 0 18px 128px 18px;
+    padding: 0 18px 148px 18px;
     width: 100%;
 
     .wrapper {
@@ -18,116 +18,117 @@
         min-width: 0;
         row-gap: 40px;
         width: 100%;
+    }
 
-        form {
+    form,
+    .form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
+
+        .form-group {
             display: flex;
             flex-direction: column;
-            row-gap: 30px;
-            width: 100%;
 
-            .form-group {
-                display: flex;
-                flex-direction: column;
+            label {
+                color: var(--form-label-text);
+                font-family: var(--font-rajdhani);
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0 0 8px 4px;
+            }
 
-                label {
-                    color: var(--form-label-text);
+            input[type="text"] {
+                background: var(--form-input-background-color);
+                border: 2px solid var(--form-input-border-color);
+                border-radius: 6px;
+                height: 56px;
+                outline: none;
+                padding: 0 20px 0 20px;
+                width: 100%;
+
+                &::placeholder {
+                    color: var(--form-input-placeholder-text);
                     font-family: var(--font-rajdhani);
                     font-size: 18px;
-                    font-weight: 700;
-                    margin: 0 0 8px 4px;
-                }
-
-                input[type="text"] {
-                    background: var(--form-input-background-color);
-                    border: 2px solid var(--form-input-border-color);
-                    border-radius: 6px;
-                    height: 56px;
-                    outline: none;
-                    padding: 0 20px 0 20px;
-                    width: 100%;
-
-                    &::placeholder {
-                        color: var(--form-input-placeholder-text);
-                        font-family: var(--font-rajdhani);
-                        font-size: 18px;
-                        font-weight: 600;
-                    }
-                }
-
-                textarea {
-                    background: var(--form-input-background-color);
-                    border: 2px solid var(--form-input-border-color);
-                    border-radius: 6px;
-                    height: 180px;
-                    outline: none;
-                    padding: 14px 20px 14px 20px;
-                    resize: none;
-                    width: 100%;
-
-                    &::placeholder {
-                        color: var(--form-input-placeholder-text);
-                        font-family: var(--font-rajdhani);
-                        font-size: 18px;
-                        font-weight: 600;
-                    }
+                    font-weight: 600;
                 }
             }
 
-            button {
+            textarea {
+                background: var(--form-input-background-color);
+                border: 2px solid var(--form-input-border-color);
+                border-radius: 6px;
+                height: 180px;
+                outline: none;
+                padding: 14px 20px 14px 20px;
+                resize: none;
                 width: 100%;
+
+                &::placeholder {
+                    color: var(--form-input-placeholder-text);
+                    font-family: var(--font-rajdhani);
+                    font-size: 18px;
+                    font-weight: 600;
+                }
             }
         }
 
-        .info {
-            display: grid;
-            row-gap: 30px;
+        button {
+            width: 100%;
+        }
+    }
+
+    .information {
+        display: grid;
+        row-gap: 30px;
+        width: 100%;
+
+        .information-box {
+            background: var(--info-card-background-color);
+            border: 2px solid var(--info-card-border-color);
+            border-radius: 6px;
+            display: flex;
+            height: 74px;
+            width: 100%;
+        }
+
+        .icon-box {
+            align-items: center;
+            display: flex;
+            height: 74px;
+            justify-content: center;
+            width: 74px;
+
+            &--icon {
+                color: var(--info-card-icon-color);
+                font-size: 44px;
+            }
+        }
+
+        .about {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10px 0 0;
             width: 100%;
 
-            .info-card {
-                background: var(--info-card-background-color);
-                border: 2px solid var(--info-card-border-color);
-                border-radius: 6px;
-                display: flex;
-                height: 74px;
-                width: 100%;
+            .title {
+                color: var(--info-card-title-color);
+                font-family: var(--font-rajdhani);
+                font-size: 26px;
+                font-weight: 700;
+                margin: 0 0 6px 0;
             }
 
-            .icon-box {
-                align-items: center;
-                display: flex;
-                height: 74px;
-                justify-content: center;
-                width: 74px;
-
-                &--icon {
-                    color: var(--info-card-icon-color);
-                    font-size: 44px;
-                }
-            }
-
-            .about {
-                display: flex;
-                flex: 1;
-                flex-direction: column;
-                justify-content: center;
-                padding: 0 10px 0 0;
-                width: 100%;
-
-                .title {
-                    color: var(--info-card-title-color);
-                    font-family: var(--font-rajdhani);
-                    font-size: 26px;
-                    font-weight: 700;
-                    margin: 0 0 6px 0;
-                }
-
-                .description {
-                    color: var(--info-card-description-color);
-                    font-family: var(--font-archivo);
-                    font-size: 14px;
-                    font-weight: 200;
-                    line-height: 1.1;
-                }
+            .description {
+                color: var(--info-card-description-color);
+                font-family: var(--font-archivo);
+                font-size: 14px;
+                font-weight: 200;
+                line-height: 1.1;
             }
         }
     }
@@ -135,61 +136,63 @@
 
 @media screen and (min-width: 360px) {
     .contact {
-        .wrapper {
-            .info {
-                justify-content: center;
+        .information {
+            justify-content: center;
 
-                .info-card {
-                    height: 84px;
-                    max-width: 332px;
+            .information-box {
+                height: 84px;
+                max-width: 332px;
+            }
+
+            .icon-box {
+                height: 84px;
+                width: 84px;
+
+                &--icon {
+                    font-size: 50px;
                 }
+            }
 
-                .icon-box {
-                    height: 84px;
-                    width: 84px;
+            .about {
+                padding: 0 14px 0 0;
 
-                    &--icon {
-                        font-size: 50px;
-                    }
-                }
-
-                .about {
-                    padding: 0 14px 0 0;
-
-                    .title {
-                        font-size: 29px;
-                    }
+                .title {
+                    font-size: 29px;
                 }
             }
         }
     }
 }
 
+@media screen and (min-width: 480px) {
+    .contact {
+        padding: 0 20px 128px 20px;
+    }
+}
+
 @media screen and (min-width: 630px) {
     .contact {
-        .wrapper {
-            .info {
-                gap: 30px;
-                grid-template-columns: 1fr 1fr;
+        .information {
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
 
-                .info-card {
-                    height: 74px;
-                    max-width: 100%;
+            .information-box {
+                height: 74px;
+                max-width: 100%;
+            }
+
+            .icon-box {
+                height: 74px;
+                width: 74px;
+
+                &--icon {
+                    font-size: 44px;
                 }
+            }
 
-                .icon-box {
-                    height: 74px;
-                    width: 74px;
-
-                    &--icon {
-                        font-size: 44px;
-                    }
-                }
-
-                .about {
-                    .title {
-                        font-size: 26px;
-                    }
+            .about {
+                .title {
+                    font-size: 26px;
                 }
             }
         }
@@ -198,27 +201,25 @@
 
 @media screen and (min-width: 680px) {
     .contact {
-        .wrapper {
-            .info {
-                .info-card {
-                    height: 84px;
+        .information {
+            .information-box {
+                height: 84px;
+            }
+
+            .icon-box {
+                height: 84px;
+                width: 84px;
+
+                &--icon {
+                    font-size: 50px;
                 }
+            }
 
-                .icon-box {
-                    height: 84px;
-                    width: 84px;
+            .about {
+                padding: 0 14px 0 0;
 
-                    &--icon {
-                        font-size: 50px;
-                    }
-                }
-
-                .about {
-                    padding: 0 14px 0 0;
-
-                    .title {
-                        font-size: 29px;
-                    }
+                .title {
+                    font-size: 29px;
                 }
             }
         }
@@ -230,17 +231,18 @@
         .wrapper {
             column-gap: 20px;
             flex-direction: row;
+        }
 
-            form {
-                width: 432px;
-            }
+        form,
+        .form {
+            width: 432px;
+        }
 
-            .info {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-            }
+        .information {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
         }
     }
 }
