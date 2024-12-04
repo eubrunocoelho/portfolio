@@ -3,13 +3,13 @@
         <article class="box">
             <div class="cover"></div>
             <div class="content">
-                <hgroup>
-                    <h2>Resumo</h2>
-                    <h1>Bruno Coelho</h1>
+                <hgroup class="title-group">
+                    <h2 class="subtitle">Resumo</h2>
+                    <h1 class="title">Bruno Coelho</h1>
                 </hgroup>
                 <div class="about">
-                    <h1>Full-Stack Developer & UI Designer</h1>
-                    <p>
+                    <h1 class="description">Full-Stack Developer & UI Designer</h1>
+                    <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
                         maecenas accumsan lacus vel facilisis.

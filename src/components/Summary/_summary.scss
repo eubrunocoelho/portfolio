@@ -33,65 +33,65 @@
         .content {
             display: flex;
             flex-direction: column;
+        }
 
-            hgroup {
-                font-family: var(--font-rajdhani);
+        .title-group {
+            font-family: var(--font-rajdhani);
+            margin: 0 0 6px 0;
+
+            .title {
+                color: var(--summary-box-subtitle-color);
+                font-size: 36px;
+                font-weight: 700;
+            }
+
+            .subtitle {
+                color: var(--summary-box-title-color);
+                font-size: 28px;
+                font-weight: 500;
                 margin: 0 0 6px 0;
+            }
+        }
 
-                h1 {
-                    color: var(--summary-box-subtitle-color);
-                    font-size: 36px;
-                    font-weight: 700;
-                }
+        .about {
+            color: var(--summary-box-about-text-color);
+            font-family: var(--font-archivo);
+            margin: 0 0 20px 0;
 
-                h2 {
-                    color: var(--summary-box-title-color);
-                    font-size: 28px;
-                    font-weight: 500;
-                    margin: 0 0 6px 0;
-                }
+            .description {
+                font-size: 22px;
+                font-weight: 200;
+                margin: 0 0 24px 0;
             }
 
-            .about {
-                color: var(--summary-box-about-text-color);
-                font-family: var(--font-archivo);
+            .text {
+                font-size: 20px;
+                font-weight: 200;
                 margin: 0 0 20px 0;
+            }
+        }
 
-                h1 {
-                    font-size: 22px;
-                    font-weight: 200;
-                    margin: 0 0 24px 0;
-                }
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: start;
+            width: 100%;
 
-                p {
-                    font-size: 20px;
-                    font-weight: 200;
-                    margin: 0 0 20px 0;
-                }
+            .social-box {
+                align-items: center;
+                background: var(--summary-box-social-box-color);
+                border: 2px solid var(--summary-box-social-border-color);
+                border-radius: 5px;
+                display: flex;
+                height: 72px;
+                justify-content: center;
+                width: 72px;
             }
 
-            .social {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: start;
-                width: 100%;
-
-                .social-box {
-                    align-items: center;
-                    background: var(--summary-box-social-box-color);
-                    border: 2px solid var(--summary-box-social-border-color);
-                    border-radius: 5px;
-                    display: flex;
-                    height: 72px;
-                    justify-content: center;
-                    width: 72px;
-                }
-
-                .social-icon {
-                    color: var(--summary-box-social-icon-color);
-                    font-size: 42px;
-                }
+            .social-icon {
+                color: var(--summary-box-social-icon-color);
+                font-size: 42px;
             }
         }
     }
@@ -102,24 +102,22 @@
         padding: 86px 20px 0 20px;
 
         .box {
-            .content {
-                hgroup {
-                    h1 {
-                        font-size: 40px;
-                    }
+            .title-group {
+                .title {
+                    font-size: 40px;
+                }
 
-                    h2 {
-                        font-size: 34px;
-                    }
+                .subtitle {
+                    font-size: 34px;
                 }
             }
 
             .about {
-                h1 {
+                .description {
                     font-size: 24px;
                 }
 
-                p {
+                .text {
                     font-size: 22px;
                 }
             }
@@ -132,15 +130,13 @@
         padding: 130px 20px 0 20px;
 
         .box {
-            .content {
-                hgroup {
-                    h1 {
-                        font-size: 48px;
-                    }
+            .title-group {
+                .title {
+                    font-size: 48px;
+                }
 
-                    h2 {
-                        font-size: 44px;
-                    }
+                .subtitle {
+                    font-size: 44px;
                 }
             }
         }
@@ -161,20 +157,20 @@
             .content {
                 flex: 1;
                 margin: 46px 0 0 0;
+            }
 
-                hgroup {
-                    h1 {
-                        font-size: 52px;
-                    }
-
-                    h2 {
-                        font-size: 36px;
-                    }
+            .title-group {
+                .title {
+                    font-size: 52px;
                 }
 
-                .about {
-                    margin: 0 0 16px 0;
+                .subtitle {
+                    font-size: 36px;
                 }
+            }
+
+            .about {
+                margin: 0 0 16px 0;
             }
         }
     }
