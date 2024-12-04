@@ -78,10 +78,8 @@
             margin: 0 0 24px 0;
         }
 
-        .btn {
-            &--custom-width {
-                width: 250px;
-            }
+        button {
+            width: 250px;
         }
     }
 }

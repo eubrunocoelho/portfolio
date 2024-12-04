@@ -9,7 +9,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
             </p>
-            <button class="btn btn-primary btn--custom-width">Solicitar Serviço</button>
+            <button class="btn btn-primary">Solicitar Serviço</button>
         </div>
     </section>
 </template>
