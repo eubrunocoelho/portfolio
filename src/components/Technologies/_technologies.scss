@@ -41,21 +41,31 @@
                 gap: 20px;
             }
 
+            .language {
+                filter: var(--technology-icon-color);
+                height: 40px;
+                width: 40px;
+            }
+
             .technology-box {
                 align-items: center;
                 background: var(--technology-background-color);
                 border: 2px solid var(--technology-border-color);
                 border-radius: 5px;
+                cursor: pointer;
                 display: flex;
                 height: 70px;
                 justify-content: center;
+                transition: border .2s ease-in-out, color .1s ease-in-out .2s;
                 width: 70px;
-            }
 
-            .language {
-                filter: var(--technology-icon-color);
-                height: 40px;
-                width: 40px;
+                &:hover {
+                    border: 2px solid var(--hover-technologies-box-border-color);
+                }
+
+                &:hover .language {
+                    filter: var(--hover-technologies-box-icon-color);
+                }
             }
         }
     }
