@@ -18,6 +18,17 @@
         height: 100%;
         justify-content: center;
         position: relative;
+        max-width: 938px;
+        width: 100% !important;
+    }
+
+    .swiper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        max-width: 786px !important;
+        width: 100% !important;
     }
 
     .previous,
@@ -158,6 +169,17 @@
 
 @media screen and (min-width: 950px) {
     .projects {
+        .navigation {
+            &--icon {
+                color: var(--projects-chevron-color);
+                font-size: 40px;
+                transition: color .1s ease-in-out;
+
+                &:hover {
+                    color: darken($color: #007bff, $amount: 12%);
+                }
+            }
+        }
 
         .previous,
         .next {
@@ -168,25 +190,15 @@
             justify-content: center;
             position: absolute;
             width: 56px;
-
-            &--icon {
-                transition: color .1s ease-in-out;
-
-                &:hover {
-                    color: darken($color: #007bff, $amount: 12%);
-                }
-
-                color: var(--projects-chevron-color);
-                font-size: 40px;
-            }
+            z-index: calc(9999 - 1);
         }
 
         .previous {
-            left: -56px;
+            left: 0
         }
 
         .next {
-            right: -56px;
+            right: 0;
         }
     }
 }
