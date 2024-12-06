@@ -1,9 +1,9 @@
 <template>
     <section class="presentation">
         <div class="wrapper">
-            <hgroup>
-                <h1>Lorem Ipsum</h1>
-                <h2>Lorem ipsum dolor</h2>
+            <hgroup class="title-group">
+                <h1 class="title">Lorem Ipsum</h1>
+                <h2 class="subtitle">Lorem ipsum dolor</h2>
             </hgroup>
             <p class="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

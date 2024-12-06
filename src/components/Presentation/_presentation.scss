@@ -19,7 +19,7 @@
         width: 100%;
     }
 
-    hgroup {
+    .title-group {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -28,14 +28,14 @@
         text-align: center;
         width: 100%;
 
-        h1 {
+        .title {
             color: var(--presentation-title-color);
             font-size: 46px;
             font-weight: 700;
             margin: 0 0 18px 0;
         }
 
-        h2 {
+        .subtitle {
             color: var(--presentation-subtitle-color);
             font-size: 36px;
             font-weight: 400;
@@ -60,15 +60,15 @@
             max-width: 600px;
         }
 
-        hgroup {
+        .title-group {
             margin: 0 0 20px 0;
 
-            h1 {
+            .title {
                 font-size: 62px;
                 margin: 0 0 20px 0;
             }
 
-            h2 {
+            .subtitle {
                 font-size: 50px;
             }
         }
@@ -88,14 +88,14 @@
     .presentation {
         padding: 160px 30px 80px 30px;
 
-        hgroup {
+        .title-group {
             margin: 0 0 25px 0;
 
-            h1 {
+            .title {
                 font-size: 72px;
             }
 
-            h2 {
+            .subtitle {
                 font-size: 60px;
             }
         }
