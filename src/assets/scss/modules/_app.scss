@@ -45,6 +45,12 @@ section {
     font-size: 21px;
     font-weight: 500;
     text-decoration: none;
+    transition: color .1s ease-in-out;
+
+    &:hover {
+        /* static colors x.x */
+        color: darken($color: #007bff, $amount: 12%);
+    }
 
     &::after {
         background: url(../img/arrow-right.svg) center no-repeat;
@@ -54,7 +60,13 @@ section {
         filter: var(--show-more-chevron-color);
         height: 15px;
         margin: 0 0 0 12px;
+        transition: filter .1s ease-in-out, margin .25s ease-in-out .1s;
         vertical-align: middle;
         width: 15px;
+    }
+
+    &:hover::after {
+        filter: var(--hover-show-more-chevron-color);
+        margin: 0 0 0 20px;
     }
 }
