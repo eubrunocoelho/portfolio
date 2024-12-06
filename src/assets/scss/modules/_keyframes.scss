@@ -1,0 +1,31 @@
+/**
+ * =================================================================================
+ * KEYFRAMES
+ * =================================================================================
+ */
+
+@keyframes dotBlink {
+    20% {
+        color: var(--title-dot-color);
+    }
+
+    40% {
+        color: var(--title-dot-color);
+    }
+
+    50% {
+        color: var(--title-dot-color);
+    }
+
+    70% {
+        color: var(--title-text-color);
+    }
+
+    90% {
+        color: var(--title-text-color);
+    }
+
+    100% {
+        color: var(--title-dot-color);
+    }
+}

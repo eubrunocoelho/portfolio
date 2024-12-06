@@ -82,6 +82,11 @@ footer {
 
             .author {
                 color: var(--footer-copy-author-color);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

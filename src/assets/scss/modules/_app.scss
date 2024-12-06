@@ -28,7 +28,9 @@ section {
         font-weight: 700;
 
         .dot {
+            animation: dotBlink 1s linear infinite;
             color: var(--title-dot-color);
+            margin: 0 0 0 8px;
         }
 
         &--spacing {

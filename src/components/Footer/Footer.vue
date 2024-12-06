@@ -29,7 +29,8 @@
         <div class="footer-copy">
             <div class="container">
                 <p>
-                    <span class="copy-symbol">©</span>2024 <span class="author">Bruno Coelho</span> | Todos os direitos
+                    <span class="copy-symbol">©</span>2024
+                    <a href="mailto:eu.brunocoelho94@gmail.com" class="author">Bruno Coelho</a> | Todos os direitos
                     reservados.
                 </p>
             </div>
