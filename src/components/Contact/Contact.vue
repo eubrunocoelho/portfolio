@@ -2,7 +2,7 @@
     <section class="contact">
         <h1 class="main-title main-title--spacing">Contato<span class="dot">.</span></h1>
         <div class="wrapper">
-            <form class="form">
+            <form class="form" autocomplete="off">
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <input type="text" name="name" placeholder="Digite seu nome" />

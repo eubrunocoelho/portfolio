@@ -65,6 +65,7 @@
     --form-input-background-color: #111113;
     --form-input-border-color: #19191b;
     --form-input-placeholder-text: #babcbf;
+    --form-input-text-color: #b5bcc5;
 
     // INFO
     --info-card-background-color: #111111;
@@ -105,14 +106,15 @@
     --font-roboto: 'Roboto', sans-serif;
 
     // HOVER
+    --hover-show-more-chevron-color: invert(27%) sepia(98%) saturate(1479%) hue-rotate(193deg) brightness(86%) contrast(111%);
     --hover-nav-link-color: #ffffff;
     --hover-nav-link-background-color: #007bff;
     --hover-nav-link-border-color: #5696da;
-
     --hover-social-box-border-color: #007bff;
-
-    --hover-show-more-chevron-color: invert(27%) sepia(98%) saturate(1479%) hue-rotate(193deg) brightness(86%) contrast(111%);
-
     --hover-technologies-box-border-color: #007bff;
     --hover-technologies-box-icon-color: invert(40%) sepia(99%) saturate(2197%) hue-rotate(195deg) brightness(99%) contrast(104%);
+
+    // FOCUS
+    --input-focus-border-color: #9d9da4;
+    --input-focus-shadow-color: #252527;
 }
