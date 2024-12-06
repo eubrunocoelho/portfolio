@@ -105,7 +105,12 @@
             border-radius: 6px;
             display: flex;
             height: 74px;
+            transition: border .2s ease-in-out;
             width: 100%;
+
+            &:hover {
+                border: 2px solid var(--hover-info-card-border-color);
+            }
         }
 
         .icon-box {
