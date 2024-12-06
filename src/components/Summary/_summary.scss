@@ -78,6 +78,11 @@
             justify-content: start;
             width: 100%;
 
+            .social-icon {
+                color: var(--summary-box-social-icon-color);
+                font-size: 42px;
+            }
+
             .social-box {
                 align-items: center;
                 background: var(--summary-box-social-box-color);
@@ -86,12 +91,17 @@
                 display: flex;
                 height: 72px;
                 justify-content: center;
+                transition: border .2s ease-in-out, color .1s ease-in-out .2s;
                 width: 72px;
-            }
 
-            .social-icon {
-                color: var(--summary-box-social-icon-color);
-                font-size: 42px;
+                &:hover {
+                    border: 2px solid var(--hover-social-box-border-color);
+                }
+
+                &:hover .social-icon {
+                    /* static colors x.x */
+                    color: lighten($color: #007bff, $amount: 5%);
+                }
             }
         }
     }

@@ -26,6 +26,11 @@ footer {
             justify-content: center;
             width: 100%;
 
+            .social-icon {
+                color: var(--footer-top-social-icon-color);
+                font-size: 34px;
+            }
+
             .social-box {
                 align-items: center;
                 background: var(--footer-top-social-box-color);
@@ -34,12 +39,17 @@ footer {
                 display: flex;
                 height: 62px;
                 justify-content: center;
+                transition: border .2s ease-in-out, color .1s ease-in-out .2s;
                 width: 62px;
-            }
 
-            .social-icon {
-                color: var(--footer-top-social-icon-color);
-                font-size: 34px;
+                &:hover {
+                    border: 2px solid var(--hover-social-box-border-color);
+                }
+
+                &:hover .social-icon {
+                    /* static colors x.x */
+                    color: lighten($color: #007bff, $amount: 5%);
+                }
             }
         }
     }
