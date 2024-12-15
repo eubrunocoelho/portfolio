@@ -4,22 +4,22 @@
             <div class="container">
                 <ul class="social">
                     <li>
-                        <a href="#" class="social-box socialsReveal">
+                        <a href="#" class="social-box social_reveal">
                             <ion-icon name="logo-github" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box socialsReveal">
+                        <a href="#" class="social-box social_reveal">
                             <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box socialsReveal">
+                        <a href="#" class="social-box social_reveal">
                             <ion-icon name="logo-deviantart" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box socialsReveal">
+                        <a href="#" class="social-box social_reveal">
                             <ion-icon name="logo-discord" class="social-icon"></ion-icon>
                         </a>
                     </li>
@@ -39,8 +39,17 @@
 </template>
 
 <script>
+import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
+
 export default {
     name: 'VueFooter',
+    mounted() {
+        const scrollReveal = initScrollReveal();
+
+        const customScrollReveal = [{ selector: '.social_reveal', config: { interval: 100, distance: '20px' } }];
+
+        revealComponentElements(scrollReveal, customScrollReveal);
+    },
 };
 </script>
 
