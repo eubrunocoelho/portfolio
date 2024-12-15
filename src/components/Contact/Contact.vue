@@ -1,8 +1,8 @@
 <template>
     <section class="contact">
-        <h1 class="main-title main-title--spacing">Contato<span class="dot">.</span></h1>
+        <h1 class="main-title main-title--spacing titleReveal">Contato<span class="dot">.</span></h1>
         <div class="wrapper">
-            <form class="form" autocomplete="off">
+            <form class="form formReveal" autocomplete="off">
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <input type="text" name="name" placeholder="Digite seu nome" />
@@ -19,10 +19,10 @@
                     <label for="message">Mensagem</label>
                     <textarea name="message" placeholder="Digite sua mensagem"></textarea>
                 </div>
-                <button class="btn btn-primary">Enviar Mensagem</button>
+                <button class="btn btn-primary buttonReveal">Enviar Mensagem</button>
             </form>
             <div class="information">
-                <div class="information-box">
+                <div class="information-box informationReveal">
                     <div class="icon-box">
                         <font-awesome-icon :icon="['fab', 'whatsapp']" class="icon-box--icon" />
                     </div>
@@ -31,7 +31,7 @@
                         <span class="description">(41) 98738-9397</span>
                     </div>
                 </div>
-                <div class="information-box">
+                <div class="information-box informationReveal">
                     <div class="icon-box">
                         <font-awesome-icon :icon="['fas', 'envelope']" class="icon-box--icon" />
                     </div>
@@ -40,7 +40,7 @@
                         <span class="description">eu.brunocoelho94@gmail.com</span>
                     </div>
                 </div>
-                <div class="information-box">
+                <div class="information-box informationReveal">
                     <div class="icon-box">
                         <font-awesome-icon :icon="['fas', 'location-dot']" class="icon-box--icon" />
                     </div>

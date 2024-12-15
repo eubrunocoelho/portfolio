@@ -1,10 +1,10 @@
 <template>
     <section class="technologies">
-        <h1 class="main-title main-title--spacing">Tecnologias<span class="dot">.</span></h1>
+        <h1 class="main-title main-title--spacing titleReveal">Tecnologias<span class="dot">.</span></h1>
         <div class="wrapper">
-            <div class="technology">
-                <h1 class="title">Front-End</h1>
-                <div class="container">
+            <div class="technology technologyReveal">
+                <h1 class="title technologyTitle">Front-End</h1>
+                <div class="container technologyLanguages">
                     <div class="technology-box">
                         <img src="../../assets/img/languages/html.svg" class="language" />
                     </div>
@@ -25,9 +25,9 @@
                     </div>
                 </div>
             </div>
-            <div class="technology">
-                <h1 class="title">Back-End</h1>
-                <div class="container">
+            <div class="technology technologyReveal">
+                <h1 class="title technologyTitle">Back-End</h1>
+                <div class="container technologyLanguages">
                     <div class="technology-box">
                         <img src="../../assets/img/languages/php.svg" class="language" />
                     </div>
@@ -45,9 +45,9 @@
                     </div>
                 </div>
             </div>
-            <div class="technology">
-                <h1 class="title">Frameworks</h1>
-                <div class="container">
+            <div class="technology technologyReveal">
+                <h1 class="title technologyTitle">Frameworks</h1>
+                <div class="container technologyLanguages">
                     <div class="technology-box">
                         <img src="../../assets/img/languages/laravel.svg" class="language" />
                     </div>
@@ -59,9 +59,9 @@
                     </div>
                 </div>
             </div>
-            <div class="technology">
-                <h1 class="title">Banco de Dados</h1>
-                <div class="container">
+            <div class="technology technologyReveal">
+                <h1 class="title technologyTitle">Banco de Dados</h1>
+                <div class="container technologyLanguages">
                     <div class="technology-box">
                         <img src="../../assets/img/languages/mysql.svg" class="language" />
                     </div>

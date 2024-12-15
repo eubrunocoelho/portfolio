@@ -4,9 +4,9 @@
             <img src="../../assets/img/waves.svg" class="object" onload="SVGInject(this)" />
         </div>
         <div class="content">
-            <h1 class="main-title main-title--spacing">Serviços<span class="dot">.</span></h1>
+            <h1 class="main-title main-title--spacing titleReveal">Serviços<span class="dot">.</span></h1>
             <div class="wrapper">
-                <div class="service">
+                <div class="service serviceReveal">
                     <div class="service-content">
                         <div class="icon-box">
                             <font-awesome-icon :icon="['fas', 'pen-ruler']" class="icon-box--icon" />
@@ -18,7 +18,7 @@
                     </div>
                     <a href="javascript:void(0);" class="show-more">Exibir mais</a>
                 </div>
-                <div class="service">
+                <div class="service serviceReveal">
                     <div class="service-content">
                         <div class="icon-box">
                             <font-awesome-icon :icon="['fas', 'display']" class="icon-box--icon" />
@@ -30,7 +30,7 @@
                     </div>
                     <a href="javascript:void(0);" class="show-more">Exibir mais</a>
                 </div>
-                <div class="service">
+                <div class="service serviceReveal">
                     <div class="service-content">
                         <div class="icon-box">
                             <font-awesome-icon :icon="['fas', 'server']" class="icon-box--icon" />
