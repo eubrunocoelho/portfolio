@@ -23,7 +23,7 @@ export default {
         const scrollReveal = initScrollReveal();
 
         const customScrollReveal = [
-            { selector: '.presentation_reveal', config: { origin: 'left', distance: '60px', delay: 250 } },
+            { selector: '.presentation_reveal', config: { delay: 250, distance: '60px', origin: 'left' } },
         ];
 
         revealComponentElements(scrollReveal, customScrollReveal);

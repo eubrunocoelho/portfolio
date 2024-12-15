@@ -84,7 +84,7 @@ export default {
 
         const customScrollReveal = [
             { selector: '.technology_reveal', config: { interval: 400 } },
-            { selector: '.technology_title_reveal', config: { origin: 'left', distance: '60px', delay: 400 } },
+            { selector: '.technology_title_reveal', config: { delay: 400, distance: '60px', origin: 'left' } },
             { selector: '.technology_languages_reveal', config: { delay: 450 } },
         ];
 

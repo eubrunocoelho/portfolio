@@ -104,7 +104,7 @@ export default {
         const customScrollReveal = [
             {
                 selector: '.project_cover_reveal',
-                config: { origin: 'center', distance: '0px', opacity: 0, easing: 'ease-in-out', delay: 300 },
+                config: { delay: 300, distance: '0px', easing: 'ease-in-out', opacity: 0, origin: 'center' },
             },
             {
                 selector: '.project_title_reveal',
@@ -116,11 +116,11 @@ export default {
             },
             {
                 selector: '.project_link_reveal',
-                config: { delay: 400, origin: 'left', distance: '20px' },
+                config: { delay: 400, distance: '20px', origin: 'left' },
             },
             {
                 selector: '.ellipses_reveal',
-                config: { delay: 100, origin: 'bottom', distance: '20px' },
+                config: { distance: '20px', delay: 100, origin: 'bottom' },
             },
         ];
 

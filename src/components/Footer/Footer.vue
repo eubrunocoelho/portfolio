@@ -46,7 +46,7 @@ export default {
     mounted() {
         const scrollReveal = initScrollReveal();
 
-        const customScrollReveal = [{ selector: '.social_reveal', config: { interval: 100, distance: '20px' } }];
+        const customScrollReveal = [{ selector: '.social_reveal', config: { distance: '20px', interval: 100 } }];
 
         revealComponentElements(scrollReveal, customScrollReveal);
     },

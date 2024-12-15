@@ -54,7 +54,7 @@ export default {
             { selector: '.summary_cover_reveal', config: { delay: 300 } },
             { selector: '.summary_subtitle_reveal', config: { delay: 300 } },
             { selector: '.summary_title_reveal', config: { delay: 200 } },
-            { selector: '.summary_description_reveal', config: { origin: 'left', distance: '60px', delay: 250 } },
+            { selector: '.summary_description_reveal', config: { delay: 250, distance: '60px', origin: 'left' } },
             { selector: '.summary_text_social_reveal', config: { delay: 400 } },
         ];
 
