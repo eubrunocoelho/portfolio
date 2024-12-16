@@ -24,13 +24,13 @@ section {
     .main-title {
         color: var(--title-text-color);
         font-family: var(--font-rajdhani);
-        font-size: 52px;
+        font-size: 44px;
         font-weight: 700;
 
         .dot {
             animation: dotBlink 1s linear infinite;
             color: var(--title-dot-color);
-            margin: 0 0 0 8px;
+            margin: 0 0 0 14px;
         }
 
         &--spacing {
@@ -70,5 +70,17 @@ section {
     &:hover::after {
         filter: var(--hover-show-more-chevron-color);
         margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    section {
+        .main-title {
+            font-size: 52px;
+
+            .dot {
+                margin: 0 0 0 18px;
+            }
+        }
     }
 }

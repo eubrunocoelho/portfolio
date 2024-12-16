@@ -4,7 +4,7 @@
             <img src="../../assets/img/waves.svg" class="object" onload="SVGInject(this)" />
         </div>
         <div class="content">
-            <h1 class="main-title main-title--spacing title_reveal">Serviços<span class="dot">.</span></h1>
+            <h1 class="main-title main-title--spacing title_reveal">Serviços<span class="dot">/</span></h1>
             <div class="wrapper">
                 <ServiceUIDesigner></ServiceUIDesigner>
                 <ServiceFrontEndDeveloper></ServiceFrontEndDeveloper>
