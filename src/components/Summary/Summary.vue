@@ -51,7 +51,7 @@ export default {
         const scrollReveal = initScrollReveal();
 
         const customScrollReveal = [
-            { selector: '.summary_cover_reveal', config: { delay: 300 } },
+            { selector: '.summary_cover_reveal', config: { delay: 300, distance: '70px' } },
             { selector: '.summary_subtitle_reveal', config: { delay: 300 } },
             { selector: '.summary_title_reveal', config: { delay: 200 } },
             { selector: '.summary_description_reveal', config: { delay: 250, distance: '60px', origin: 'left' } },

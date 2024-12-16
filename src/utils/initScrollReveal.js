@@ -5,7 +5,7 @@ export const initScrollReveal = () => {
     const scrollReveal = ScrollReveal({
         origin: 'top',
         distance: '40px',
-        duration: 2000,
+        duration: 1500,
     });
 
     // Global
@@ -15,6 +15,7 @@ export const initScrollReveal = () => {
     return scrollReveal;
 };
 
+// Custom settings
 export const revealComponentElements = (scrollReveal, customConfig = []) => {
     customConfig.forEach(({ selector, config }) => {
         scrollReveal.reveal(selector, config);
