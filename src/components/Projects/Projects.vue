@@ -9,55 +9,13 @@
                 <font-awesome-icon :icon="['fas', 'chevron-right']" class="navigation--icon" />
             </div>
             <swiper :slides-per-view="1" :spaceBetween="0" :centeredSlides="true">
+                <!-- The first project must have the scrollreveal selectors -->
                 <swiper-slide class="project">
-                    <span class="project-box project_cover_reveal"></span>
-                    <div class="about">
-                        <h1 class="title project_title_reveal">Página Pessoal Minimalista</h1>
-                        <p class="text project_text_languages_reveal">
-                            Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit
-                            hendrerit.
-                        </p>
-                        <ul class="languages project_text_languages_reveal">
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/vuejs.svg" class="language" />
-                            </li>
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/js.svg" class="language" />
-                            </li>
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/css.svg" class="language" />
-                            </li>
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/sass.svg" class="language" />
-                            </li>
-                        </ul>
-                        <a href="#" class="show-more project_link_reveal">Exibir mais</a>
-                    </div>
+                    <ProjectMinimalistPersonalPage></ProjectMinimalistPersonalPage>
                 </swiper-slide>
+                <!-- Following projects should not have scrollreveal selectors -->
                 <swiper-slide class="project">
-                    <span class="project-box"></span>
-                    <div class="about">
-                        <h1 class="title">Página Pessoal Minimalista</h1>
-                        <p class="text">
-                            Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit
-                            hendrerit.
-                        </p>
-                        <ul class="languages">
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/vuejs.svg" class="language" />
-                            </li>
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/js.svg" class="language" />
-                            </li>
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/css.svg" class="language" />
-                            </li>
-                            <li class="language-box">
-                                <img src="../../assets/img/languages/sass.svg" class="language" />
-                            </li>
-                        </ul>
-                        <a href="#" class="show-more">Exibir mais</a>
-                    </div>
+                    <ProjectTodoGraphQLAPI></ProjectTodoGraphQLAPI>
                 </swiper-slide>
             </swiper>
         </div>
@@ -73,8 +31,12 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+import ProjectMinimalistPersonalPage from './Project/MinimalistPersonalPage.vue';
+import ProjectTodoGraphQLAPI from './Project/TodoGraphQLAPI.vue';
+
 import 'swiper/css';
 
 export default {
@@ -82,6 +44,8 @@ export default {
     components: {
         Swiper,
         SwiperSlide,
+        ProjectMinimalistPersonalPage,
+        ProjectTodoGraphQLAPI,
     },
 
     setup() {
