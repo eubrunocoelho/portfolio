@@ -3,9 +3,11 @@
         <div class="form-group">
             <label for="name">Nome</label>
             <input type="text" name="name" placeholder="Digite seu nome" v-model="state.name" @blur="v$.name.$touch" />
-            <div v-if="v$.name.$error" class="alert alert--danger margin--top-20">
-                <p>{{ v$.name.$errors[0].$message }}</p>
-            </div>
+            <transition name="fade">
+                <div v-if="v$.name.$error" class="alert alert-danger margin--top-20">
+                    <p>{{ v$.name.$errors[0].$message }}</p>
+                </div>
+            </transition>
         </div>
         <div class="form-group">
             <label for="email">E-mail</label>
@@ -49,14 +51,31 @@ export default {
     },
     methods: {
         async submitForm() {
-            const isFormCorrect = await this.v$.$validate();
-
-            if (isFormCorrect) {
-                console.log('SEND');
-            } else {
-                console.log('NOT SEND');
-            }
+            // const isFormCorrect = await this.v$.$validate();
+            // LOGIC HERE !! Ò.Ó
         },
     },
 };
 </script>
+
+<style>
+.fade-enter-active {
+    animation: fade 0.5s ease-in-out;
+}
+
+.fade-leave-active {
+    animation: fade 0.5s ease-in-out reverse;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>

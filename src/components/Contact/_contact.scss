@@ -102,7 +102,11 @@
         }
     }
 
-    .alert {
+    .alert,
+    .alert-danger {
+        background: var(--alert-danger-background-color);
+        border: 1px solid var(--alert-danger-border-color);
+        border-radius: 3px;
         color: var(--alert-text-color);
         font-family: var(--font-archivo);
         font-size: 16px;
@@ -112,12 +116,6 @@
         padding: 18px 20px 18px 20px;
         text-align: center;
         width: 100%;
-
-        &--danger {
-            background: var(--alert-danger-background-color);
-            border: 1px solid var(--alert-danger-border-color);
-            border-radius: 3px;
-        }
     }
 
     .message {
