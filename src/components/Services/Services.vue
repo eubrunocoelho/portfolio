@@ -6,42 +6,9 @@
         <div class="content">
             <h1 class="main-title main-title--spacing title_reveal">Serviços<span class="dot">.</span></h1>
             <div class="wrapper">
-                <div class="service service_reveal">
-                    <div class="service-content">
-                        <div class="icon-box">
-                            <font-awesome-icon :icon="['fas', 'pen-ruler']" class="icon-box--icon" />
-                        </div>
-                        <h1 class="title">
-                            UI<br />
-                            Designer
-                        </h1>
-                    </div>
-                    <a href="javascript:void(0);" class="show-more">Exibir mais</a>
-                </div>
-                <div class="service service_reveal">
-                    <div class="service-content">
-                        <div class="icon-box">
-                            <font-awesome-icon :icon="['fas', 'display']" class="icon-box--icon" />
-                        </div>
-                        <h1 class="title">
-                            Front-End<br />
-                            Developer
-                        </h1>
-                    </div>
-                    <a href="javascript:void(0);" class="show-more">Exibir mais</a>
-                </div>
-                <div class="service service_reveal">
-                    <div class="service-content">
-                        <div class="icon-box">
-                            <font-awesome-icon :icon="['fas', 'server']" class="icon-box--icon" />
-                        </div>
-                        <h1 class="title">
-                            Back-End<br />
-                            Developer
-                        </h1>
-                    </div>
-                    <a href="javascript:void(0);" class="show-more">Exibir mais</a>
-                </div>
+                <ServiceUIDesigner></ServiceUIDesigner>
+                <ServiceFrontEndDeveloper></ServiceFrontEndDeveloper>
+                <ServiceBackEndDeveloper></ServiceBackEndDeveloper>
             </div>
         </div>
     </section>
@@ -50,8 +17,17 @@
 <script>
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
+import ServiceUIDesigner from './service/UIDesigner.vue';
+import ServiceFrontEndDeveloper from './service/FrontEndDeveloper.vue';
+import ServiceBackEndDeveloper from './service/BackEndDeveloper.vue';
+
 export default {
     name: 'VueServices',
+    components: {
+        ServiceUIDesigner,
+        ServiceFrontEndDeveloper,
+        ServiceBackEndDeveloper,
+    },
     mounted() {
         const scrollReveal = initScrollReveal();
 
