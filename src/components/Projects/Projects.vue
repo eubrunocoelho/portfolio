@@ -34,8 +34,8 @@
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
-import ProjectMinimalistPersonalPage from './Project/MinimalistPersonalPage.vue';
-import ProjectTodoGraphQLAPI from './Project/TodoGraphQLAPI.vue';
+import ProjectMinimalistPersonalPage from './projects/MinimalistPersonalPage.vue';
+import ProjectTodoGraphQLAPI from './projects/TodoGraphQLAPI.vue';
 
 import 'swiper/css';
 
