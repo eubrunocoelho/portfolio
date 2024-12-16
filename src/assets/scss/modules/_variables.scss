@@ -101,8 +101,18 @@
     --title-text-color: #007bff;
     --title-dot-color: #ffffff;
 
+    // ALERT
+    --alert-text-color: #ffffff;
+    --alert-danger-background-color: #621515;
+    --alert-danger-border-color: #8e1313;
+
+    // MESSAGE
+    --message-success-icon-color: invert(51%) sepia(17%) saturate(1147%) hue-rotate(64deg) brightness(95%) contrast(89%);
+    --message-success-text-color: #5bb14e;
+
     // FONTS
     --font-archivo: 'Archivo', sans-serif;
+    --font-platypi: 'Platypi', serif;
     --font-rajdhani: 'Rajdhani', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
 

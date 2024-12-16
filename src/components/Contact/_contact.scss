@@ -20,6 +20,14 @@
         width: 100%;
     }
 
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        width: 100%;
+    }
+
     form,
     .form {
         display: flex;
@@ -91,6 +99,47 @@
 
         button {
             width: 100%;
+        }
+    }
+
+    .alert {
+        color: var(--alert-text-color);
+        font-family: var(--font-archivo);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+        padding: 18px 20px 18px 20px;
+        text-align: center;
+        width: 100%;
+
+        &--danger {
+            background: var(--alert-danger-background-color);
+            border: 1px solid var(--alert-danger-border-color);
+            border-radius: 3px;
+        }
+    }
+
+    .message {
+        align-items: center;
+        display: flex;
+        font-family: var(--font-platypi);
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        width: 100%;
+
+        .icon {
+            filter: var(--message-success-icon-color);
+            height: 50px;
+            width: 50px;
+            margin: 0 0 14px 0;
+        }
+
+        .text {
+            color: var(--message-success-text-color);
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
         }
     }
 

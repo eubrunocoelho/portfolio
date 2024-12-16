@@ -7,6 +7,9 @@
         <div class="form-group">
             <label for="email">E-mail</label>
             <input type="text" name="email" placeholder="Digite seu e-mail" />
+            <div class="alert alert--danger margin--top-20">
+                <p>O endereço de e-mail está inválido.</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="subject">Assunto</label>
@@ -18,6 +21,10 @@
         </div>
         <button class="btn btn-primary button_reveal">Enviar Mensagem</button>
     </form>
+    <div class="message">
+        <img src="../../../assets/img/success-icon.svg" class="icon" />
+        <p class="text">Mensagem enviada!</p>
+    </div>
 </template>
 
 <script>

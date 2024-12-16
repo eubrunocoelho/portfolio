@@ -2,7 +2,9 @@
     <section class="contact">
         <h1 class="main-title main-title--spacing title_reveal">Contato<span class="dot">.</span></h1>
         <div class="wrapper">
-            <ContactForm></ContactForm>
+            <div class="container">
+                <ContactForm></ContactForm>
+            </div>
             <ContactInformation></ContactInformation>
         </div>
     </section>
