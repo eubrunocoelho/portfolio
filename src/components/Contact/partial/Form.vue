@@ -1,15 +1,15 @@
 <template>
-    <form class="form form_reveal" autocomplete="off">
+    <form class="form form_reveal" autocomplete="off" @submit.prevent="submitForm">
         <div class="form-group">
             <label for="name">Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" />
+            <input type="text" name="name" placeholder="Digite seu nome" v-model="state.name" @blur="v$.name.$touch" />
+            <div v-if="v$.name.$error" class="alert alert--danger margin--top-20">
+                <p>{{ v$.name.$errors[0].$message }}</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="email">E-mail</label>
             <input type="text" name="email" placeholder="Digite seu e-mail" />
-            <div class="alert alert--danger margin--top-20">
-                <p>O endereço de e-mail está inválido.</p>
-            </div>
         </div>
         <div class="form-group">
             <label for="subject">Assunto</label>
@@ -28,7 +28,35 @@
 </template>
 
 <script>
+import { reactive } from 'vue';
+import { useVuelidate } from '@vuelidate/core';
+import { required } from '@vuelidate/validators';
+
 export default {
     name: 'ContactForm',
+    setup() {
+        const state = reactive({
+            name: '',
+        });
+
+        const rules = {
+            name: { required },
+        };
+
+        const v$ = useVuelidate(rules, state);
+
+        return { state, v$ };
+    },
+    methods: {
+        async submitForm() {
+            const isFormCorrect = await this.v$.$validate();
+
+            if (isFormCorrect) {
+                console.log('SEND');
+            } else {
+                console.log('NOT SEND');
+            }
+        },
+    },
 };
 </script>
