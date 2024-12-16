@@ -2,13 +2,28 @@
     <section class="projects">
         <h1 class="main-title main-title--spacing title_reveal">Projetos<span class="dot">.</span></h1>
         <div class="container">
-            <div class="previous">
-                <font-awesome-icon :icon="['fas', 'chevron-left']" class="navigation--icon" />
+            <div class="previous" @click="swiper.slidePrev()">
+                <font-awesome-icon
+                    :icon="['fas', 'chevron-left']"
+                    class="navigation--icon"
+                    :class="{ 'navigation--disable': isFirstSlide() }"
+                />
             </div>
-            <div class="next">
-                <font-awesome-icon :icon="['fas', 'chevron-right']" class="navigation--icon" />
+            <div class="next" @click="swiper.slideNext()">
+                <font-awesome-icon
+                    :icon="['fas', 'chevron-right']"
+                    class="navigation--icon"
+                    :class="{ 'navigation--disable': isLastSlide() }"
+                />
             </div>
-            <swiper :slides-per-view="1" :spaceBetween="0" :centeredSlides="true">
+            <swiper
+                ref="swiperRef"
+                :slides-per-view="1"
+                :spaceBetween="0"
+                :centeredSlides="true"
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
+            >
                 <!-- The first project must have the scrollreveal selectors -->
                 <swiper-slide class="project">
                     <ProjectMinimalistPersonalPage></ProjectMinimalistPersonalPage>
@@ -21,10 +36,13 @@
         </div>
         <nav class="ellipses ellipses_reveal">
             <div class="wrapper">
-                <span class="ellipse"></span>
-                <span class="ellipse"></span>
-                <span class="ellipse ellipse--active"></span>
-                <span class="ellipse"></span>
+                <span
+                    v-for="(ellipse, index) in slides"
+                    :key="index"
+                    class="ellipse"
+                    :class="{ 'ellipse--active': index == activeIndex }"
+                    @click="goToSlide(index)"
+                ></span>
             </div>
         </nav>
     </section>
@@ -33,6 +51,7 @@
 <script>
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { ref } from 'vue';
 
 import ProjectMinimalistPersonalPage from './project/MinimalistPersonalPage.vue';
 import ProjectTodoGraphQLAPI from './project/TodoGraphQLAPI.vue';
@@ -47,19 +66,45 @@ export default {
         ProjectMinimalistPersonalPage,
         ProjectTodoGraphQLAPI,
     },
-
     setup() {
-        const onSwiper = (swiper) => {
-            console.log(swiper);
+        const swiperRef = ref(null);
+        const activeIndex = ref(0);
+        const slides = ref([]);
+
+        const onSwiper = (swiperInstance) => {
+            swiperRef.value = swiperInstance;
+
+            slides.value = Array.from({ length: swiperInstance.slides.length }, (_, i) => i);
         };
 
         const onSlideChange = () => {
-            console.log('slide change');
+            activeIndex.value = swiperRef.value?.activeIndex || 0;
+
+            isFirstSlide();
+            isLastSlide();
+        };
+
+        const goToSlide = (index) => {
+            swiperRef.value?.slideTo(index);
+        };
+
+        const isFirstSlide = () => {
+            return activeIndex.value === slides.value[0];
+        };
+
+        const isLastSlide = () => {
+            return activeIndex.value === slides.value[slides.value.length - 1];
         };
 
         return {
+            swiper: swiperRef,
+            activeIndex,
+            slides,
             onSwiper,
             onSlideChange,
+            goToSlide,
+            isFirstSlide,
+            isLastSlide,
         };
     },
     mounted() {
