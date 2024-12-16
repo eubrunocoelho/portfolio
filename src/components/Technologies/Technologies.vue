@@ -2,74 +2,10 @@
     <section class="technologies">
         <h1 class="main-title main-title--spacing title_reveal">Tecnologias<span class="dot">.</span></h1>
         <div class="wrapper">
-            <div class="technology technology_reveal">
-                <h1 class="title technology_title_reveal">Front-End</h1>
-                <div class="container technology_languages_reveal">
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/html.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/css.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/js.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/jquery.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/vuejs.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/sass.svg" class="language" />
-                    </div>
-                </div>
-            </div>
-            <div class="technology technology_reveal">
-                <h1 class="title technology_title_reveal">Back-End</h1>
-                <div class="container technology_languages_reveal">
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/php.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/laravel.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/nodejs.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/ts.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/graphql.svg" class="language" />
-                    </div>
-                </div>
-            </div>
-            <div class="technology technology_reveal">
-                <h1 class="title technology_title_reveal">Frameworks</h1>
-                <div class="container technology_languages_reveal">
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/laravel.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/vuejs.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/jquery.svg" class="language" />
-                    </div>
-                </div>
-            </div>
-            <div class="technology technology_reveal">
-                <h1 class="title technology_title_reveal">Banco de Dados</h1>
-                <div class="container technology_languages_reveal">
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/mysql.svg" class="language" />
-                    </div>
-                    <div class="technology-box">
-                        <img src="../../assets/img/languages/mongodb.svg" class="language" />
-                    </div>
-                </div>
-            </div>
+            <TechnologyFrontEnd></TechnologyFrontEnd>
+            <TechnologyBackEnd></TechnologyBackEnd>
+            <TechnologyFrameworks></TechnologyFrameworks>
+            <TechnologyDatabase></TechnologyDatabase>
         </div>
     </section>
 </template>
@@ -77,8 +13,19 @@
 <script>
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
+import TechnologyFrontEnd from './technology/FrontEnd.vue';
+import TechnologyBackEnd from './technology/BackEnd.vue';
+import TechnologyFrameworks from './technology/Frameworks.vue';
+import TechnologyDatabase from './technology/DataBase.vue';
+
 export default {
     name: 'VueTechnologies',
+    components: {
+        TechnologyFrontEnd,
+        TechnologyBackEnd,
+        TechnologyFrameworks,
+        TechnologyDatabase,
+    },
     mounted() {
         const scrollReveal = initScrollReveal();
 
