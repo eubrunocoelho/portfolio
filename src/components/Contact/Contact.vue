@@ -11,8 +11,8 @@
 <script>
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
-import ContactForm from './partials/Form.vue';
-import ContactInformation from './partials/Information.vue';
+import ContactForm from './partial/Form.vue';
+import ContactInformation from './partial/Information.vue';
 
 export default {
     name: 'VueContact',
