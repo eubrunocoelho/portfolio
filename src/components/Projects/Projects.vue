@@ -4,23 +4,23 @@
         <div class="container">
             <div class="previous" @click="swiper.slidePrev()">
                 <font-awesome-icon
-                    :icon="['fas', 'chevron-left']"
                     class="navigation--icon"
                     :class="{ 'navigation--disable': isFirstSlide() }"
+                    :icon="['fas', 'chevron-left']"
                 />
             </div>
             <div class="next" @click="swiper.slideNext()">
                 <font-awesome-icon
-                    :icon="['fas', 'chevron-right']"
                     class="navigation--icon"
                     :class="{ 'navigation--disable': isLastSlide() }"
+                    :icon="['fas', 'chevron-right']"
                 />
             </div>
             <swiper
                 ref="swiperRef"
+                :centeredSlides="true"
                 :slides-per-view="1"
                 :spaceBetween="0"
-                :centeredSlides="true"
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
             >
@@ -37,9 +37,9 @@
         <nav class="ellipses ellipses_reveal">
             <div class="wrapper">
                 <span
+                    class="ellipse"
                     v-for="(ellipse, index) in slides"
                     :key="index"
-                    class="ellipse"
                     :class="{ 'ellipse--active': index == activeIndex }"
                     @click="goToSlide(index)"
                 ></span>
