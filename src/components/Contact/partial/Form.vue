@@ -74,7 +74,7 @@
 <script>
 import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
-import { required, helpers } from '@vuelidate/validators';
+import { required, minLength, maxLength, email, helpers } from '@vuelidate/validators';
 
 import AlertMessage from './AlertMessage.vue';
 
@@ -92,15 +92,42 @@ export default {
         const rules = {
             name: {
                 required: helpers.withMessage('Por favor, insira seu nome.', required),
+                minLength: helpers.withMessage(
+                    ({ $params }) => `O nome deve ter no mínimo ${$params.min} caracteres.`,
+                    minLength(3),
+                ),
+                maxLength: helpers.withMessage(
+                    ({ $params }) => `O nome deve ter no máximo ${$params.max} caracteres.`,
+                    maxLength(128),
+                ),
             },
             email: {
                 required: helpers.withMessage('Por favor, insira seu endereço de e-mail.', required),
+                minLength: helpers.withMessage(
+                    ({ $params }) => `O endereço de e-mail ter no mínimo ${$params.min} caracteres.`,
+                    minLength(12),
+                ),
+                maxLength: helpers.withMessage(
+                    ({ $params }) => `O endereço de e-mail ter no máximo ${$params.max} caracteres.`,
+                    maxLength(128),
+                ),
+                email: helpers.withMessage('O endereço de e-mail está inválido.', email),
             },
             subject: {
                 required: helpers.withMessage('Por favor, insira um assunto.', required),
+                minLength: helpers.withMessage(
+                    ({ $params }) => `O assunto deve ter no mínimo ${$params.min} caracteres.`,
+                    minLength(6),
+                ),
+                maxLength: helpers.withMessage(
+                    ({ $params }) => `O assunto deve ter no máximo ${$params.max} caracteres.`,
+                    maxLength(255),
+                ),
             },
             message: {
                 required: helpers.withMessage('Por favor, escreva uma mensagem.', required),
+                minLength: helpers.withMessage('A mensagem é muito curta.', minLength(6)),
+                maxLength: helpers.withMessage('A mensagem está muito longa.', maxLength(2048)),
             },
         };
 
