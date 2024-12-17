@@ -9,6 +9,7 @@
                 placeholder="Digite seu nome"
                 v-model="state.name"
                 @blur="v$.name.$touch"
+                :disabled="submitStatus === 'OK'"
             />
             <alertMessage>
                 <div v-if="v$.name.$error" class="alert alert-danger margin--top-20">
@@ -25,6 +26,7 @@
                 placeholder="Digite seu e-mail"
                 v-model="state.email"
                 @blur="v$.email.$touch"
+                :disabled="submitStatus === 'OK'"
             />
             <alertMessage>
                 <div v-if="v$.email.$error" class="alert alert-danger margin--top-20">
@@ -41,6 +43,7 @@
                 placeholder="Digite um assunto"
                 v-model="state.subject"
                 @blur="v$.subject.$touch"
+                :disabled="submitStatus === 'OK'"
             />
             <alertMessage>
                 <div v-if="v$.subject.$error" class="alert alert-danger margin--top-20">
@@ -56,6 +59,7 @@
                 placeholder="Digite sua mensagem"
                 v-model="state.message"
                 @blur="v$.message.$touch"
+                :disabled="submitStatus === 'OK'"
             ></textarea>
             <alertMessage>
                 <div v-if="v$.message.$error" class="alert alert-danger margin--top-20">
@@ -63,12 +67,14 @@
                 </div>
             </alertMessage>
         </div>
-        <button class="btn btn-primary button_reveal">Enviar Mensagem</button>
+        <button class="btn btn-primary button_reveal" :disabled="submitStatus === 'OK'">Enviar Mensagem</button>
     </form>
-    <div class="message">
-        <img src="../../../assets/img/success-icon.svg" class="icon" />
-        <p class="text">Mensagem enviada!</p>
-    </div>
+    <successMessage>
+        <div class="message" v-if="submitStatus === 'OK'">
+            <img src="../../../assets/img/success-icon.svg" class="icon" />
+            <p class="text">Mensagem enviada!</p>
+        </div>
+    </successMessage>
 </template>
 
 <script>
@@ -77,10 +83,11 @@ import { useVuelidate } from '@vuelidate/core';
 import { required, minLength, maxLength, email, helpers } from '@vuelidate/validators';
 
 import AlertMessage from './AlertMessage.vue';
+import SuccessMessage from './SuccessMessage.vue';
 
 export default {
     name: 'ContactForm',
-    components: { AlertMessage },
+    components: { AlertMessage, SuccessMessage },
     setup() {
         const state = reactive({
             name: '',
@@ -135,10 +142,24 @@ export default {
 
         return { state, v$ };
     },
+    data() {
+        return {
+            submitStatus: null,
+        };
+    },
     methods: {
         async submitForm() {
-            // const isFormCorrect = await this.v$.$validate();
-            // LOGIC HERE !! Ò.Ó
+            console.log('submit!');
+
+            this.v$.$touch();
+
+            if (!this.v$.$invalid) {
+                this.submitStatus = 'PENDING';
+
+                setTimeout(() => {
+                    this.submitStatus = 'OK';
+                }, 500);
+            }
         },
     },
 };
