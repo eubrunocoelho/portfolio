@@ -1,13 +1,18 @@
 <template>
-    <section class="window"></section>
+    <section class="window">
+        <VueModal></VueModal>
+    </section>
 </template>
 
 <script>
+import VueModal from '../Modal/Modal.vue';
+
 export default {
     name: 'VueWindow',
+    components: { VueModal },
 };
 </script>
 
-<style type="scss">
-@import './_window-overlay.scss';
+<style lang="scss">
+@import './window-overlay';
 </style>

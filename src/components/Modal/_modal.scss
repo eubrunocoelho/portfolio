@@ -1,0 +1,64 @@
+/**
+ * =================================================================================
+ * MODAL
+ * =================================================================================
+ */
+
+.area {
+    height: 100vh;
+    justify-content: center;
+    overflow: auto;
+    padding: 100px 10px 40px 10px;
+    width: 100%;
+
+    .modal {
+        background: #121214;
+        border: 2px solid #19191b;
+        padding: 62px 20px 50px 20px;
+        position: relative;
+        width: 100%;
+        z-index: calc(9999 + 2);
+
+        .close {
+            align-items: center;
+            display: flex;
+            height: 38px;
+            justify-content: center;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 38px;
+
+            .icon {
+                font-size: 32px;
+                color: #007bff;
+                transition: color .1s ease-in-out;
+
+                &:hover {
+                    color: darken($color: #007bff, $amount: 12%);
+                }
+            }
+        }
+
+        .title {
+            color: var(--services-card-title-color);
+            font-family: var(--font-rajdhani);
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            li {
+                color: darken($color: #ffffff, $amount: 20%);
+                font-family: var(--font-rajdhani);
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
