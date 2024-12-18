@@ -1,0 +1,15 @@
+/**
+ * =================================================================================
+ * WINDOW
+ * =================================================================================
+ */
+
+.window {
+    background: var(--window-overlay-background-color);
+    height: 100vh;
+    opacity: .66;
+    pointer-events: all;
+    position: fixed;
+    width: 100vw;
+    z-index: calc(9999 + 1);
+}
