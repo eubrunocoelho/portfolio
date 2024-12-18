@@ -54,10 +54,21 @@
             row-gap: 10px;
 
             li {
+                align-items: center;
                 color: darken($color: #ffffff, $amount: 20%);
+                display: inline-flex;
                 font-family: var(--font-rajdhani);
                 font-size: 18px;
                 font-weight: 600;
+
+                &::before {
+                    color: #007bff;
+                    content: '\f00c';
+                    font: var(--fa-font-solid);
+                    font-size: 18px;
+                    margin: 0 10px 0 0;
+                    display: inline-block;
+                }
             }
         }
     }
