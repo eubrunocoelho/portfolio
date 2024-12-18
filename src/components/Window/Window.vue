@@ -1,15 +1,17 @@
 <template>
     <section class="window">
-        <VueModal></VueModal>
+        <VueSidebar></VueSidebar>
+        <VueModal style="display: none"></VueModal>
     </section>
 </template>
 
 <script>
+import VueSidebar from '../Sidebar/Sidebar.vue';
 import VueModal from '../Modal/Modal.vue';
 
 export default {
     name: 'VueWindow',
-    components: { VueModal },
+    components: { VueModal, VueSidebar },
 };
 </script>
 
