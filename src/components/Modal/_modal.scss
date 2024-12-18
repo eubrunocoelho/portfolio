@@ -14,6 +14,8 @@
     .modal {
         background: #121214;
         border: 2px solid #19191b;
+        margin: 0 auto;
+        max-width: 440px;
         padding: 62px 20px 50px 20px;
         position: relative;
         width: 100%;
@@ -32,6 +34,7 @@
             .icon {
                 font-size: 32px;
                 color: #007bff;
+                cursor: pointer;
                 transition: color .1s ease-in-out;
 
                 &:hover {
@@ -55,17 +58,17 @@
 
             li {
                 align-items: center;
-                color: darken($color: #ffffff, $amount: 20%);
+                color: darken($color: #ffffff, $amount: 26%);
                 display: inline-flex;
                 font-family: var(--font-rajdhani);
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 600;
 
                 &::before {
                     color: #007bff;
                     content: '\f00c';
                     font: var(--fa-font-solid);
-                    font-size: 18px;
+                    font-size: 16px;
                     margin: 0 10px 0 0;
                     display: inline-block;
                 }

@@ -11,9 +11,10 @@
             <ul class="skills">
                 <li>Criação de UI (Interface do Usuário).</li>
                 <li>Criatividade.</li>
+                <li>Design Atrativo.</li>
                 <li>Produtividade.</li>
-                <li>Photoshop.</li>
-                <li>Illustrator.</li>
+                <li>Adobe Photoshop.</li>
+                <li>Adobe Illustrator.</li>
             </ul>
         </article>
     </section>
