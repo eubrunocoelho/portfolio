@@ -9,12 +9,18 @@
                 Designer
             </h1>
         </div>
-        <a href="javascript:void(0);" class="show-more">Exibir mais</a>
+        <a href="javascript:void(0);" class="show-more" @click="toggleUIDesigner">Exibir mais</a>
     </div>
 </template>
 
 <script>
 export default {
     name: 'ServiceUIDesigner',
+    props: {
+        toggleUIDesigner: {
+            type: Function,
+            required: true,
+        },
+    },
 };
 </script>
