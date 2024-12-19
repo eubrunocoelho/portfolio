@@ -42,6 +42,16 @@
     }
 }
 
+@keyframes fadeSidebar {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 @keyframes fadeModal {
     from {
         opacity: 0;

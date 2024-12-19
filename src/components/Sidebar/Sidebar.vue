@@ -2,7 +2,7 @@
     <section class="sidebar">
         <div class="wrapper">
             <div class="close">
-                <font-awesome-icon :icon="['fas', 'xmark']" class="icon" />
+                <font-awesome-icon :icon="['fas', 'xmark']" class="icon" @click="closeSidebar()" />
             </div>
             <nav class="navigation">
                 <ul>
@@ -33,6 +33,12 @@
 <script>
 export default {
     name: 'VueSidebar',
+    props: {
+        closeSidebar: {
+            type: Function,
+            required: true,
+        },
+    },
 };
 </script>
 

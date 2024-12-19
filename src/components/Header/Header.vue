@@ -1,8 +1,11 @@
 <template>
+    <Teleport to="#app">
+        <VueWindow v-model:viewWindow="viewWindow" v-model:viewSidebar="viewSidebar"></VueWindow>
+    </Teleport>
     <header>
         <div class="container">
             <button class="open-menu">
-                <font-awesome-icon :icon="['fas', 'bars']" class="open-menu--icon" />
+                <font-awesome-icon :icon="['fas', 'bars']" class="open-menu--icon" @click="toggleSidebar" />
             </button>
             <div class="logo-wrapper"></div>
             <nav class="navigation">
@@ -32,8 +35,23 @@
 </template>
 
 <script>
+import VueWindow from '../Sidebar/Window.vue';
+
 export default {
     name: 'VueHeader',
+    components: { VueWindow },
+    data() {
+        return {
+            viewWindow: false,
+            viewSidebar: false,
+        };
+    },
+    methods: {
+        toggleSidebar() {
+            this.viewWindow = !this.viewWindow;
+            this.viewSidebar = !this.viewSidebar;
+        },
+    },
 };
 </script>
 
