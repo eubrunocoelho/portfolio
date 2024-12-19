@@ -1,6 +1,6 @@
 <template>
     <Teleport to="#app">
-        <VueWindow v-model:viewWindow="viewWindow"></VueWindow>
+        <VueWindow v-model:viewWindow="viewWindow" v-model:viewModal="viewModal"></VueWindow>
     </Teleport>
     <section class="services">
         <div class="waves">
@@ -36,7 +36,7 @@ export default {
     data() {
         return {
             viewWindow: false,
-            viewUIDesigner: false,
+            viewModal: false,
         };
     },
     mounted() {
@@ -49,6 +49,7 @@ export default {
     methods: {
         toggleUIDesigner() {
             this.viewWindow = !this.viewWindow;
+            this.viewModal = !this.viewModal;
         },
     },
 };
