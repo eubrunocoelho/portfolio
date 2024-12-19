@@ -3,7 +3,12 @@
         <section class="window" v-show="viewWindow">
             <section class="area" @click="isOutModal($event)" ref="area">
                 <transition name="fadeModal">
-                    <VueModal v-if="viewModal"></VueModal>
+                    <VueModal
+                        v-if="viewModal"
+                        :closeModal="closeModal"
+                        :dataModal="dataModal"
+                        @click="debug()"
+                    ></VueModal>
                 </transition>
             </section>
         </section>
@@ -25,6 +30,10 @@ export default {
             type: Boolean,
             required: true,
         },
+        dataModal: {
+            type: Object,
+            required: true,
+        },
     },
     methods: {
         isOutModal(event) {
@@ -36,7 +45,12 @@ export default {
             this.$emit('update:viewModal', false);
             this.$emit('update:viewWindow', false);
         },
+
+        debug() {
+            console.log(this.dataModal);
+        },
     },
+    mounted() {},
 };
 </script>
 

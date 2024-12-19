@@ -9,12 +9,18 @@
                 Developer
             </h1>
         </div>
-        <a href="javascript:void(0);" class="show-more">Exibir mais</a>
+        <a href="javascript:void(0);" class="show-more" @click="toggleBackEndDeveloper">Exibir mais</a>
     </div>
 </template>
 
 <script>
 export default {
     name: 'ServiceBackEndDeveloper',
+    props: {
+        toggleBackEndDeveloper: {
+            type: Function,
+            required: true,
+        },
+    },
 };
 </script>
