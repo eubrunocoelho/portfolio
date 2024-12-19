@@ -3,7 +3,7 @@
         <section class="window" v-show="viewWindow">
             <section class="area" @click="isOutModal($event)" ref="area">
                 <transition name="fadeModal">
-                    <VueModal v-if="viewModal" :closeModal="closeModal" :dataModal="dataModal"></VueModal>
+                    <ServiceModal v-if="viewModal" :closeModal="closeModal" :dataModal="dataModal"></ServiceModal>
                 </transition>
             </section>
         </section>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import VueModal from './Modal.vue';
+import ServiceModal from './Modal.vue';
 
 export default {
-    name: 'VueWindow',
-    components: { VueModal },
+    name: 'ServiceWindow',
+    components: { ServiceModal },
     props: {
         viewWindow: {
             type: Boolean,

@@ -1,6 +1,10 @@
 <template>
     <Teleport to="#app">
-        <VueWindow v-model:viewWindow="viewWindow" v-model:viewModal="viewModal" :dataModal="dataModal"></VueWindow>
+        <ServiceWindow
+            v-model:viewWindow="viewWindow"
+            v-model:viewModal="viewModal"
+            :dataModal="dataModal"
+        ></ServiceWindow>
     </Teleport>
     <section class="services">
         <div class="waves">
@@ -20,7 +24,7 @@
 <script>
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
-import VueWindow from '../Modal/Window.vue';
+import ServiceWindow from '../Modal/Window.vue';
 import ServiceUIDesigner from './service/UIDesigner.vue';
 import ServiceFrontEndDeveloper from './service/FrontEndDeveloper.vue';
 import ServiceBackEndDeveloper from './service/BackEndDeveloper.vue';
@@ -28,7 +32,7 @@ import ServiceBackEndDeveloper from './service/BackEndDeveloper.vue';
 export default {
     name: 'MyServices',
     components: {
-        VueWindow,
+        ServiceWindow,
         ServiceUIDesigner,
         ServiceFrontEndDeveloper,
         ServiceBackEndDeveloper,

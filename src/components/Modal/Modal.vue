@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: 'VueModal',
+    name: 'ServiceModal',
     props: {
         closeModal: {
             type: Function,
