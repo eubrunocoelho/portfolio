@@ -1,7 +1,7 @@
 <template>
     <transition name="fadeWindow">
-        <section class="window" v-show="viewWindow" @click="closeModal()">
-            <section class="area">
+        <section class="window" v-show="viewWindow">
+            <section class="area" @click="isOutModal($event)" ref="area">
                 <transition name="fadeModal">
                     <VueModal v-if="viewModal"></VueModal>
                 </transition>
@@ -27,9 +27,14 @@ export default {
         },
     },
     methods: {
+        isOutModal(event) {
+            if (event.target === this.$refs.area) {
+                this.closeModal();
+            }
+        },
         closeModal() {
-            this.$emit('update:viewWindow', false);
             this.$emit('update:viewModal', false);
+            this.$emit('update:viewWindow', false);
         },
     },
 };
@@ -44,14 +49,14 @@ export default {
 
 .fadeWindow-leave-active {
     animation: fadeWindow 0.3s ease-in-out reverse;
-    animation-delay: 0.35s;
+    animation-delay: 0.4s;
 }
 
 .fadeModal-enter-active {
-    animation: fadeModal 0.35s ease-in-out;
+    animation: fadeModal 0.4s ease-in-out;
 }
 
 .fadeModal-leave-active {
-    animation: fadeModal 0.35s ease-in-out reverse;
+    animation: fadeModal 0.4s ease-in-out reverse;
 }
 </style>

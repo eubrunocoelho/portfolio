@@ -20,7 +20,7 @@
 <script>
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
-import VueWindow from '../Window/Window.vue';
+import VueWindow from '../Modal/Window.vue';
 import ServiceUIDesigner from './service/UIDesigner.vue';
 import ServiceFrontEndDeveloper from './service/FrontEndDeveloper.vue';
 import ServiceBackEndDeveloper from './service/BackEndDeveloper.vue';

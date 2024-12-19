@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import VueWindow from './components/Window/Window.vue';
+import VueWindow from './components/Modal/Window.vue';
 import VueHeader from './components/Header/Header.vue';
 import VuePresentation from './components/Presentation/Presentation.vue';
 import VueSummary from './components/Summary/Summary.vue';
