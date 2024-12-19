@@ -50,8 +50,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './window-overlay';
-
 .fadeWindow-enter-active {
     animation: fadeWindow 0.3s ease-in-out;
 }

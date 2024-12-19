@@ -11,6 +11,14 @@
     width: 100%;
 }
 
+.window {
+    background: rgba($color: #141414, $alpha: .66);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: calc(9999 + 1);
+}
+
 main {
     display: flex;
     flex-direction: column;
