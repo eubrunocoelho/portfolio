@@ -82,8 +82,8 @@ import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
 import { required, minLength, maxLength, email, helpers } from '@vuelidate/validators';
 
-import AlertMessage from './AlertMessage.vue';
-import SuccessMessage from './SuccessMessage.vue';
+import AlertMessage from './form/AlertMessage.vue';
+import SuccessMessage from './form/SuccessMessage.vue';
 
 export default {
     name: 'ContactForm',
