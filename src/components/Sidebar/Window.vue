@@ -2,18 +2,18 @@
     <transition name="fadeWindow">
         <section class="window" v-show="viewWindow" @click="isOutSidebar($event)" ref="window">
             <transition name="fadeSidebar">
-                <VueSidebar v-if="viewSidebar" :closeSidebar="closeSidebar"></VueSidebar>
+                <MySidebar v-if="viewSidebar" :closeSidebar="closeSidebar"></MySidebar>
             </transition>
         </section>
     </transition>
 </template>
 
 <script>
-import VueSidebar from './Sidebar.vue';
+import MySidebar from './Sidebar.vue';
 
 export default {
-    name: 'VueWindow',
-    components: { VueSidebar },
+    name: 'SidebarWindow',
+    components: { MySidebar },
     props: {
         viewWindow: {
             type: Boolean,

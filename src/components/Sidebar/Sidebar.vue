@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: 'VueSidebar',
+    name: 'MySidebar',
     props: {
         closeSidebar: {
             type: Function,

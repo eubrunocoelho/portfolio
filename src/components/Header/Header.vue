@@ -1,6 +1,6 @@
 <template>
     <Teleport to="#app">
-        <VueWindow v-model:viewWindow="viewWindow" v-model:viewSidebar="viewSidebar"></VueWindow>
+        <SidebarWindow v-model:viewWindow="viewWindow" v-model:viewSidebar="viewSidebar"></SidebarWindow>
     </Teleport>
     <header>
         <div class="container">
@@ -35,11 +35,11 @@
 </template>
 
 <script>
-import VueWindow from '../Sidebar/Window.vue';
+import SidebarWindow from '../Sidebar/Window.vue';
 
 export default {
     name: 'MyHeader',
-    components: { VueWindow },
+    components: { SidebarWindow },
     data() {
         return {
             viewWindow: false,
