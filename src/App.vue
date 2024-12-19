@@ -1,40 +1,37 @@
 <template>
-    <VueWindow></VueWindow>
-    <VueHeader></VueHeader>
+    <MyHeader></MyHeader>
     <main>
-        <VuePresentation></VuePresentation>
-        <VueSummary></VueSummary>
-        <VueServices></VueServices>
-        <VueProjects></VueProjects>
-        <VueTechnologies></VueTechnologies>
-        <VueContact></VueContact>
+        <MyPresentation></MyPresentation>
+        <MySummary></MySummary>
+        <MyServices></MyServices>
+        <MyProjects></MyProjects>
+        <MyTechnologies></MyTechnologies>
+        <MyContact></MyContact>
     </main>
-    <VueFooter></VueFooter>
+    <MyFooter></MyFooter>
 </template>
 
 <script>
-import VueWindow from './components/Modal/Window.vue';
-import VueHeader from './components/Header/Header.vue';
-import VuePresentation from './components/Presentation/Presentation.vue';
-import VueSummary from './components/Summary/Summary.vue';
-import VueServices from './components/Services/Services.vue';
-import VueProjects from './components/Projects/Projects.vue';
-import VueTechnologies from './components/Technologies/Technologies.vue';
-import VueContact from './components/Contact/Contact.vue';
-import VueFooter from './components/Footer/Footer.vue';
+import MyHeader from './components/Header/Header.vue';
+import MyPresentation from './components/Presentation/Presentation.vue';
+import MySummary from './components/Summary/Summary.vue';
+import MyServices from './components/Services/Services.vue';
+import MyProjects from './components/Projects/Projects.vue';
+import MyTechnologies from './components/Technologies/Technologies.vue';
+import MyContact from './components/Contact/Contact.vue';
+import MyFooter from './components/Footer/Footer.vue';
 
 export default {
     name: 'App',
     components: {
-        VueWindow,
-        VueHeader,
-        VuePresentation,
-        VueSummary,
-        VueServices,
-        VueProjects,
-        VueTechnologies,
-        VueContact,
-        VueFooter,
+        MyHeader,
+        MyPresentation,
+        MySummary,
+        MyServices,
+        MyProjects,
+        MyTechnologies,
+        MyContact,
+        MyFooter,
     },
 };
 </script>

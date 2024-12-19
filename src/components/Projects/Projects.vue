@@ -59,7 +59,7 @@ import ProjectTodoGraphQLAPI from './project/TodoGraphQLAPI.vue';
 import 'swiper/css';
 
 export default {
-    name: 'VueProjects',
+    name: 'MyProjects',
     components: {
         Swiper,
         SwiperSlide,

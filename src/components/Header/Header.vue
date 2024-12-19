@@ -38,7 +38,7 @@
 import VueWindow from '../Sidebar/Window.vue';
 
 export default {
-    name: 'VueHeader',
+    name: 'MyHeader',
     components: { VueWindow },
     data() {
         return {

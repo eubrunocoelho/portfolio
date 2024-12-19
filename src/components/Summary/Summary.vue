@@ -46,7 +46,7 @@
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
 export default {
-    name: 'VueSummary',
+    name: 'MySummary',
     mounted() {
         const scrollReveal = initScrollReveal();
 

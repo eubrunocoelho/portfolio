@@ -26,7 +26,7 @@ import ServiceFrontEndDeveloper from './service/FrontEndDeveloper.vue';
 import ServiceBackEndDeveloper from './service/BackEndDeveloper.vue';
 
 export default {
-    name: 'VueServices',
+    name: 'MyServices',
     components: {
         VueWindow,
         ServiceUIDesigner,

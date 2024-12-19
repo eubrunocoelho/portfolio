@@ -19,7 +19,7 @@ import TechnologyFrameworks from './technology/Frameworks.vue';
 import TechnologyDatabase from './technology/DataBase.vue';
 
 export default {
-    name: 'VueTechnologies',
+    name: 'MyTechnologies',
     components: {
         TechnologyFrontEnd,
         TechnologyBackEnd,

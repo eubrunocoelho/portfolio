@@ -42,7 +42,7 @@
 import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 
 export default {
-    name: 'VueFooter',
+    name: 'MyFooter',
     mounted() {
         const scrollReveal = initScrollReveal();
 

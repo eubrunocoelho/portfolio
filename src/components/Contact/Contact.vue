@@ -17,7 +17,7 @@ import ContactForm from './partial/Form.vue';
 import ContactInformation from './partial/Information.vue';
 
 export default {
-    name: 'VueContact',
+    name: 'MyContact',
     components: {
         ContactForm,
         ContactInformation,
