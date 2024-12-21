@@ -16,7 +16,7 @@
     // HEADER
     --header-background-color: #0c0c0d;
     --header-border-color: #151518;
-    --header-open-menu-icon-color: #ffffff;
+    --header-open-icon-color: #ffffff;
     --header-logo-box-color: #0e0e10;
     --header-nav-link-color: #b5bcc5;
 
@@ -46,10 +46,12 @@
 
     // SERVICES
     --services-background-color: #0e0e10;
-    --services-card-background-color: #0e0e10;
-    --services-card-border-color: #19191b;
-    --services-card-icon-color: #007bff;
-    --services-card-title-color: #ffffff;
+    --services-box-background-color: #0e0e10;
+    --services-box-border-color: #19191b;
+    --services-box-icon-color: #007bff;
+    --services-box-title-color: #ffffff;
+
+    // SERVICES - MODAL
     --services-modal-title-color: #ffffff;
     --services-modal-background-color: #121214;
     --services-modal-border-color: #19191b;
@@ -68,9 +70,9 @@
 
     // TECHNOLOGIES
     --technologies-background-color: #0e0e10;
-    --technologies-card-background-color: #0e0e10;
-    --technologies-card-border-color: #19191b;
-    --technologies-card-title-color: #ffffff;
+    --technologies-box-background-color: #0e0e10;
+    --technologies-box-border-color: #19191b;
+    --technologies-box-title-color: #ffffff;
 
     // CONTACT
     --contact-background-color: #121214;
@@ -83,11 +85,11 @@
     --form-input-text-color: #b5bcc5;
 
     // INFORMATION
-    --info-card-background-color: #111111;
-    --info-card-border-color: #19191b;
-    --info-card-icon-color: #007bff;
-    --info-card-title-color: #007bff;
-    --info-card-description-color: #b5bcc5;
+    --info-box-background-color: #111111;
+    --info-box-border-color: #19191b;
+    --info-box-icon-color: #007bff;
+    --info-box-title-color: #007bff;
+    --info-box-description-color: #b5bcc5;
 
     // FOOTER
     --footer-top-background-color: #111113;
@@ -130,16 +132,28 @@
     --font-rajdhani: 'Rajdhani', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
 
-    // HOVER
+    // HOVER - APP
     --hover-show-more-chevron-color: invert(27%) sepia(98%) saturate(1479%) hue-rotate(193deg) brightness(86%) contrast(111%);
-    --hover-nav-link-color: #ffffff;
-    --hover-nav-link-background-color: #007bff;
-    --hover-nav-link-border-color: #5696da;
+
+    // HOVER - HEADER
+    --hover-header-nav-link-color: #ffffff;
+    --hover-header-nav-link-background-color: #007bff;
+    --hover-header-nav-link-border-color: #5696da;
+
+    // HOVER - SOCIAL
     --hover-social-box-border-color: #007bff;
-    --hover-service-card-border-color: #007bff;
+
+    // HOVER - SERVICE
+    --hover-services-box-border-color: #007bff;
+
+    // HOVER - TECHNOLOGIES
     --hover-technologies-box-border-color: #007bff;
     --hover-technologies-box-icon-color: invert(40%) sepia(99%) saturate(2197%) hue-rotate(195deg) brightness(99%) contrast(104%);
-    --hover-info-card-border-color: #007bff;
+
+    // HOVER - INFO
+    --hover-info-box-border-color: #007bff;
+
+    // HOVER - SIDEBAR
     --hover-sidebar-nav-link-background-color: #007bff;
     --hover-sidebar-nav-link-border-color: #5696da;
     --hover-sidebar-nav-link-color: #ffffff;

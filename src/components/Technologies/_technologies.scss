@@ -19,8 +19,8 @@
         width: 100%;
 
         .technology {
-            background: var(--technologies-card-background-color);
-            border: 2px solid var(--technologies-card-border-color);
+            background: var(--technologies-box-background-color);
+            border: 2px solid var(--technologies-box-border-color);
             border-radius: 6px;
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@
             padding: 30px 30px 30px 30px;
 
             .title {
-                color: var(--technologies-card-title-color);
+                color: var(--technologies-box-title-color);
                 font-family: var(--font-rajdhani);
                 font-size: 30px;
                 font-weight: 700;

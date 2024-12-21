@@ -36,7 +36,7 @@ header {
         width: 82px;
 
         &--icon {
-            color: var(--header-open-menu-icon-color);
+            color: var(--header-open-icon-color);
             cursor: pointer;
             font-size: 24px;
             transition: color .1s ease-in-out;
@@ -101,9 +101,9 @@ header {
                 width: max-content;
 
                 &:hover {
-                    background: var(--hover-nav-link-background-color);
-                    border: 1px solid var(--hover-nav-link-border-color);
-                    color: var(--hover-nav-link-color);
+                    background: var(--hover-header-nav-link-background-color);
+                    border: 1px solid var(--hover-header-nav-link-border-color);
+                    color: var(--hover-header-nav-link-color);
                 }
             }
         }

@@ -26,8 +26,8 @@
         }
 
         .service {
-            background: var(--services-card-background-color);
-            border: 2px solid var(--services-card-border-color);
+            background: var(--services-box-background-color);
+            border: 2px solid var(--services-box-border-color);
             border-radius: 6px;
             cursor: crosshair;
             padding: 32px 30px 32px 30px;
@@ -35,7 +35,7 @@
             width: 100%;
 
             &:hover {
-                border: 2px solid var(--hover-service-card-border-color);
+                border: 2px solid var(--hover-services-box-border-color);
             }
         }
 
@@ -50,13 +50,13 @@
                 width: 38px;
 
                 &--icon {
-                    color: var(--services-card-icon-color);
+                    color: var(--services-box-icon-color);
                     font-size: 36px;
                 }
             }
 
             .title {
-                color: var(--services-card-title-color);
+                color: var(--services-box-title-color);
                 font-family: var(--font-rajdhani);
                 font-size: 36px;
                 font-weight: 700;
