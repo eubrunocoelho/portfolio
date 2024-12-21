@@ -69,7 +69,7 @@
         </div>
         <button class="btn btn-primary button_reveal" :disabled="submitStatus === 'OK'">Enviar Mensagem</button>
     </form>
-    <successMessage :submitStatus="submitStatus"> </successMessage>
+    <SuccessMessage :submitStatus="submitStatus"></SuccessMessage>
 </template>
 
 <script>
