@@ -27,13 +27,13 @@ footer {
             width: 100%;
 
             .social-icon {
-                color: var(--footer-top-social-icon-color);
+                color: var(--footer-top-social-box-icon-color);
                 font-size: 34px;
             }
 
             .social-box {
                 align-items: center;
-                background: var(--footer-top-social-box-color);
+                background: var(--footer-top-social-box-background-color);
                 border: 2px solid var(--footer-top-social-box-border-color);
                 border-radius: 5px;
                 display: flex;

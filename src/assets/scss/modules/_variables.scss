@@ -17,7 +17,7 @@
     --header-background-color: #0c0c0d;
     --header-border-color: #151518;
     --header-open-icon-color: #ffffff;
-    --header-logo-box-color: #0e0e10;
+    --header-logo-box-color: #0e0e10; //
     --header-nav-link-color: #b5bcc5;
 
     // SIDEBAR
@@ -40,9 +40,9 @@
     --summary-box-title-color: #007bff;
     --summary-box-subtitle-color: #ffffff;
     --summary-box-about-text-color: #b5bcc5;
-    --summary-box-social-box-color: #111111;
-    --summary-box-social-border-color: #1f1f1f;
-    --summary-box-social-icon-color: #007bff;
+    --summary-box-social-box-background-color: #111111;
+    --summary-box-social-box-border-color: #1f1f1f;
+    --summary-box-social-box-icon-color: #007bff;
 
     // SERVICES
     --services-background-color: #0e0e10;
@@ -93,9 +93,9 @@
 
     // FOOTER
     --footer-top-background-color: #111113;
-    --footer-top-social-box-color: #111113;
+    --footer-top-social-box-background-color: #111113;
     --footer-top-social-box-border-color: #171719;
-    --footer-top-social-icon-color: #007bff;
+    --footer-top-social-box-icon-color: #007bff;
     --footer-copy-background-color: #0c0c0d;
     --footer-copy-text-color: #b5bcc5;
     --footer-copy-author-color: #007bff;
@@ -104,9 +104,9 @@
     --language-icon-color: invert(91%) sepia(0%) saturate(0%) hue-rotate(155deg) brightness(94%) contrast(89%);
 
     // TECHNOLOGY
-    --technology-icon-color: invert(29%) sepia(74%) saturate(3464%) hue-rotate(202deg) brightness(107%) contrast(102%);
-    --technology-box-color: #0e0e10;
-    --technology-border-color: #19191b;
+    --technology-box-icon-color: invert(29%) sepia(74%) saturate(3464%) hue-rotate(202deg) brightness(107%) contrast(102%);
+    --technology-box-background-color: #0e0e10;
+    --technology-box-border-color: #19191b;
 
     // BUTTONS
     --button-text-color: #0e0e10;
@@ -146,9 +146,9 @@
     // HOVER - SERVICE
     --hover-services-box-border-color: #007bff;
 
-    // HOVER - TECHNOLOGIES
-    --hover-technologies-box-border-color: #007bff;
-    --hover-technologies-box-icon-color: invert(40%) sepia(99%) saturate(2197%) hue-rotate(195deg) brightness(99%) contrast(104%);
+    // HOVER - TECHNOLOGY
+    --hover-technology-box-border-color: #007bff;
+    --hover-technology-box-icon-color: invert(40%) sepia(99%) saturate(2197%) hue-rotate(195deg) brightness(99%) contrast(104%);
 
     // HOVER - INFO
     --hover-info-box-border-color: #007bff;
