@@ -7,22 +7,22 @@
             <nav class="navigation">
                 <ul>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('presentationRef', 0)">Início</a>
+                        <a href="javascript:void(0);" @click="handleClick('presentationRef', 0)">Início</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('summaryRef', 0)">Sobre</a>
+                        <a href="javascript:void(0);" @click="handleClick('summaryRef', 0)">Sobre</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('servicesRef', 60)">Serviços</a>
+                        <a href="javascript:void(0);" @click="handleClick('servicesRef', 60)">Serviços</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('projectsRef', 60)">Projetos</a>
+                        <a href="javascript:void(0);" @click="handleClick('projectsRef', 60)">Projetos</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('technologiesRef', 60)">Tecnologias</a>
+                        <a href="javascript:void(0);" @click="handleClick('technologiesRef', 60)">Tecnologias</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('contactRef', 60)">Contato</a>
+                        <a href="javascript:void(0);" @click="handleClick('contactRef', 60)">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -41,6 +41,12 @@ export default {
         scrollToId: {
             type: Function,
             required: true,
+        },
+    },
+    methods: {
+        handleClick(elementId, offset) {
+            this.closeSidebar();
+            this.scrollToId(elementId, offset);
         },
     },
 };
