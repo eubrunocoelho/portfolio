@@ -11,22 +11,22 @@
             <nav class="navigation">
                 <ul>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('myPresentation')">Início</a>
+                        <a href="javascript:void(0);" @click="scrollToId('presentationRef', 0)">Início</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('mySummary')">Sobre</a>
+                        <a href="javascript:void(0);" @click="scrollToId('summaryRef', 0)">Sobre</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('myServices')">Serviços</a>
+                        <a href="javascript:void(0);" @click="scrollToId('servicesRef', 60)">Serviços</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('myProjects')">Projetos</a>
+                        <a href="javascript:void(0);" @click="scrollToId('projectsRef', 60)">Projetos</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('myTechnologies')">Tecnologias</a>
+                        <a href="javascript:void(0);" @click="scrollToId('technologiesRef', 60)">Tecnologias</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" @click="scrollToId('myContact')">Contato</a>
+                        <a href="javascript:void(0);" @click="scrollToId('contactRef', 60)">Contato</a>
                     </li>
                 </ul>
             </nav>

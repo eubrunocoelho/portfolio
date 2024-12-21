@@ -1,6 +1,6 @@
 <template>
-    <section class="contact" id="myContact">
-        <h1 class="main-title main-title--spacing title_reveal">Contato<span class="dot">/</span></h1>
+    <section class="contact">
+        <h1 class="main-title main-title--spacing title_reveal" id="contactRef">Contato<span class="dot">/</span></h1>
         <div class="wrapper">
             <div class="container">
                 <ContactForm></ContactForm>

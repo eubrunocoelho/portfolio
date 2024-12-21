@@ -1,6 +1,8 @@
 <template>
-    <section class="technologies" id="myTechnologies">
-        <h1 class="main-title main-title--spacing title_reveal">Tecnologias<span class="dot">/</span></h1>
+    <section class="technologies">
+        <h1 class="main-title main-title--spacing title_reveal" id="technologiesRef">
+            Tecnologias<span class="dot">/</span>
+        </h1>
         <div class="wrapper">
             <TechnologyFrontEnd></TechnologyFrontEnd>
             <TechnologyBackEnd></TechnologyBackEnd>

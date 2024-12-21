@@ -34,18 +34,18 @@ export default {
         MyFooter,
     },
     methods: {
-        scrollToId(elementId) {
+        scrollToId(elementId, offset) {
             const targetElement = '#' + elementId;
 
             const element = document.querySelector(targetElement);
-            const offset = 82 + 20;
+            const topOffset = offset;
 
             console.log(element);
 
             if (element) {
                 const position = element.getBoundingClientRect().top + window.scrollY;
 
-                var scrollPosition = position - offset;
+                var scrollPosition = position - topOffset;
             }
 
             if (elementId == 'app') {
