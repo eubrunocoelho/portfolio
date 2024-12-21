@@ -2,7 +2,7 @@
     <transition name="fadeWindow">
         <section class="window" v-show="viewWindow" @click="isOutSidebar($event)" ref="window">
             <transition name="fadeSidebar">
-                <MySidebar v-if="viewSidebar" :closeSidebar="closeSidebar"></MySidebar>
+                <MySidebar v-if="viewSidebar" :closeSidebar="closeSidebar" :scrollToId="scrollToId"></MySidebar>
             </transition>
         </section>
     </transition>
@@ -21,6 +21,10 @@ export default {
         },
         viewSidebar: {
             type: Boolean,
+            required: true,
+        },
+        scrollToId: {
+            type: Function,
             required: true,
         },
     },

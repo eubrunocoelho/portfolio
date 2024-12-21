@@ -1,6 +1,10 @@
 <template>
     <Teleport to="#app">
-        <SidebarWindow v-model:viewWindow="viewWindow" v-model:viewSidebar="viewSidebar"></SidebarWindow>
+        <SidebarWindow
+            v-model:viewWindow="viewWindow"
+            v-model:viewSidebar="viewSidebar"
+            :scrollToId="scrollToId"
+        ></SidebarWindow>
     </Teleport>
     <header>
         <div class="container">
