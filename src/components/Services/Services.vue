@@ -56,7 +56,7 @@ export default {
             },
 
             FrontEndDeveloper: {
-                title: 'Frond-End<br />Developer',
+                title: 'Front-End<br />Developer',
                 skills: [
                     'Temas para diferentes disposítivos.',
                     'Recursos interativos e intuitivos.',
