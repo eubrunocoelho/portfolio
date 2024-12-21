@@ -5,8 +5,8 @@
  */
 
 .sidebar {
-    background: #121214;
-    border-right: 2px solid #19191b;
+    background: var(--sidebar-background-color);
+    border-right: 2px solid var(--sidebar-border-color);
     height: 100vh;
     overflow: auto;
     position: fixed;
@@ -31,7 +31,7 @@
 
             .icon {
                 font-size: 32px;
-                color: #007bff;
+                color: var(--sidebar-close-icon-color);
                 cursor: pointer;
                 transition: color .1s ease-in-out;
 
@@ -54,7 +54,7 @@
                 background: transparent;
                 border: 1px solid transparent;
                 border-radius: 4px;
-                color: var(--header-nav-link-color);
+                color: var(--sidebar-nav-link-color);
                 display: block;
                 font-size: 20px;
                 font-weight: 600;
@@ -63,9 +63,9 @@
                 transition: all .28s ease-in-out;
 
                 &:hover {
-                    background: var(--hover-nav-link-background-color);
-                    border: 1px solid var(--hover-nav-link-border-color);
-                    color: var(--hover-nav-link-color);
+                    background: var(--hover-sidebar-nav-link-background-color);
+                    border: 1px solid var(--hover-sidebar-nav-link-border-color);
+                    color: var(--hover-sidebar-nav-link-color);
                 }
             }
         }

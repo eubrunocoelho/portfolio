@@ -12,8 +12,8 @@
     width: 100%;
 
     .modal {
-        background: #121214;
-        border: 2px solid #19191b;
+        background: var(--services-modal-background-color);
+        border: 2px solid var(--services-modal-border-color);
         margin: 0 auto;
         max-width: 440px;
         padding: 62px 20px 50px 20px;
@@ -33,7 +33,7 @@
 
             .icon {
                 font-size: 32px;
-                color: #007bff;
+                color: var(--services-modal-close-icon-color);
                 cursor: pointer;
                 transition: color .1s ease-in-out;
 
@@ -44,7 +44,7 @@
         }
 
         .title {
-            color: var(--services-card-title-color);
+            color: var(--services-modal-title-color);
             font-family: var(--font-rajdhani);
             font-size: 36px;
             font-weight: 700;
@@ -65,7 +65,7 @@
                 font-weight: 600;
 
                 &::before {
-                    color: #007bff;
+                    color: var(--services-modal-icon-color);
                     content: '\f00c';
                     font: var(--fa-font-solid);
                     font-size: 16px;

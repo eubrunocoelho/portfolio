@@ -20,6 +20,12 @@
     --header-logo-box-color: #0e0e10;
     --header-nav-link-color: #b5bcc5;
 
+    // SIDEBAR
+    --sidebar-background-color: #121214;
+    --sidebar-border-color: #19191b;
+    --sidebar-close-icon-color: #007bff;
+    --sidebar-nav-link-color: #b5bcc5;
+
     // PRESENTATION
     --presentation-background-color: #0e0e10;
     --presentation-title-color: #007bff;
@@ -44,6 +50,11 @@
     --services-card-border-color: #19191b;
     --services-card-icon-color: #007bff;
     --services-card-title-color: #ffffff;
+    --services-modal-title-color: #ffffff;
+    --services-modal-background-color: #121214;
+    --services-modal-border-color: #19191b;
+    --services-modal-close-icon-color: #007bff;
+    --services-modal-icon-color: #007bff;
 
     // PROJECTS
     --projects-background-color: #121214;
@@ -129,6 +140,9 @@
     --hover-technologies-box-border-color: #007bff;
     --hover-technologies-box-icon-color: invert(40%) sepia(99%) saturate(2197%) hue-rotate(195deg) brightness(99%) contrast(104%);
     --hover-info-card-border-color: #007bff;
+    --hover-sidebar-nav-link-background-color: #007bff;
+    --hover-sidebar-nav-link-border-color: #5696da;
+    --hover-sidebar-nav-link-color: #ffffff;
 
     // FOCUS
     --input-focus-border-color: #9d9da4;
