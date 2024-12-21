@@ -40,8 +40,6 @@ export default {
             const element = document.querySelector(targetElement);
             const topOffset = offset;
 
-            console.log(element);
-
             if (element) {
                 const position = element.getBoundingClientRect().top + window.scrollY;
 
