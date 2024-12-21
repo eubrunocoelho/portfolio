@@ -8,7 +8,7 @@
     </Teleport>
     <section class="services">
         <div class="waves">
-            <img src="../../assets/img/waves.svg" class="object" onload="SVGInject(this)" />
+            <img src="../../assets/img/waves.svg" class="object" />
         </div>
         <div class="content">
             <h1 class="main-title main-title--spacing title_reveal" id="servicesRef">
