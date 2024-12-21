@@ -11,11 +11,11 @@
                 @blur="v$.name.$touch"
                 :disabled="submitStatus === 'OK'"
             />
-            <alertMessage>
+            <ErrorMessage>
                 <div v-if="v$.name.$error" class="alert alert-danger margin--top-20">
                     <p>{{ v$.name.$errors[0].$message }}</p>
                 </div>
-            </alertMessage>
+            </ErrorMessage>
         </div>
         <div class="form-group">
             <label for="email">E-mail</label>
@@ -28,11 +28,11 @@
                 @blur="v$.email.$touch"
                 :disabled="submitStatus === 'OK'"
             />
-            <alertMessage>
+            <ErrorMessage>
                 <div v-if="v$.email.$error" class="alert alert-danger margin--top-20">
                     <p>{{ v$.email.$errors[0].$message }}</p>
                 </div>
-            </alertMessage>
+            </ErrorMessage>
         </div>
         <div class="form-group">
             <label for="subject">Assunto</label>
@@ -45,11 +45,11 @@
                 @blur="v$.subject.$touch"
                 :disabled="submitStatus === 'OK'"
             />
-            <alertMessage>
+            <ErrorMessage>
                 <div v-if="v$.subject.$error" class="alert alert-danger margin--top-20">
                     <p>{{ v$.subject.$errors[0].$message }}</p>
                 </div>
-            </alertMessage>
+            </ErrorMessage>
         </div>
         <div class="form-group">
             <label for="message">Mensagem</label>
@@ -61,20 +61,15 @@
                 @blur="v$.message.$touch"
                 :disabled="submitStatus === 'OK'"
             ></textarea>
-            <alertMessage>
+            <ErrorMessage>
                 <div v-if="v$.message.$error" class="alert alert-danger margin--top-20">
                     <p>{{ v$.message.$errors[0].$message }}</p>
                 </div>
-            </alertMessage>
+            </ErrorMessage>
         </div>
         <button class="btn btn-primary button_reveal" :disabled="submitStatus === 'OK'">Enviar Mensagem</button>
     </form>
-    <successMessage>
-        <div class="message" v-if="submitStatus === 'OK'">
-            <img src="../../../assets/img/success-icon.svg" class="icon" />
-            <p class="text">Mensagem enviada!</p>
-        </div>
-    </successMessage>
+    <successMessage :submitStatus="submitStatus"> </successMessage>
 </template>
 
 <script>
@@ -82,12 +77,12 @@ import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
 import { required, minLength, maxLength, email, helpers } from '@vuelidate/validators';
 
-import AlertMessage from './form/AlertMessage.vue';
-import SuccessMessage from './form/SuccessMessage.vue';
+import ErrorMessage from './messages/ErrorMessage.vue';
+import SuccessMessage from './messages/SuccessMessage.vue';
 
 export default {
     name: 'ContactForm',
-    components: { AlertMessage, SuccessMessage },
+    components: { ErrorMessage, SuccessMessage },
     setup() {
         const state = reactive({
             name: '',
@@ -109,16 +104,16 @@ export default {
                 ),
             },
             email: {
-                required: helpers.withMessage('Por favor, insira seu endereço de e-mail.', required),
+                required: helpers.withMessage('Por favor, insira seu e-mail.', required),
                 minLength: helpers.withMessage(
-                    ({ $params }) => `O endereço de e-mail ter no mínimo ${$params.min} caracteres.`,
+                    ({ $params }) => `O e-mail ter no mínimo ${$params.min} caracteres.`,
                     minLength(12),
                 ),
                 maxLength: helpers.withMessage(
-                    ({ $params }) => `O endereço de e-mail ter no máximo ${$params.max} caracteres.`,
+                    ({ $params }) => `O e-mail ter no máximo ${$params.max} caracteres.`,
                     maxLength(128),
                 ),
-                email: helpers.withMessage('O endereço de e-mail está inválido.', email),
+                email: helpers.withMessage('O e-mail está inválido.', email),
             },
             subject: {
                 required: helpers.withMessage('Por favor, insira um assunto.', required),

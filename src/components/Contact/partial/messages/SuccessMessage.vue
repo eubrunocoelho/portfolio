@@ -1,12 +1,21 @@
 <template>
     <transition name="fadeMessage">
-        <slot></slot>
+        <div class="message" v-if="submitStatus === 'OK'">
+            <img src="../../../../assets/img/success-icon.svg" class="icon" />
+            <p class="text">Mensagem enviada!</p>
+        </div>
     </transition>
 </template>
 
 <script>
 export default {
     name: 'SuccessMessage',
+    props: {
+        submitStatus: {
+            type: String,
+            required: true,
+        },
+    },
 };
 </script>
 
