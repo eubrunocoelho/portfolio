@@ -1,5 +1,5 @@
 <template>
-    <section class="presentation">
+    <section class="presentation" id="myPresentation">
         <div class="wrapper">
             <hgroup class="title-group title_reveal">
                 <h1 class="title">Lorem Ipsum</h1>

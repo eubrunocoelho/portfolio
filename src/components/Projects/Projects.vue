@@ -1,5 +1,5 @@
 <template>
-    <section class="projects">
+    <section class="projects" id="myProjects">
         <h1 class="main-title main-title--spacing title_reveal">Projetos<span class="dot">/</span></h1>
         <div class="container">
             <div class="previous" @click="swiper.slidePrev()">

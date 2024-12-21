@@ -6,7 +6,7 @@
             :dataModal="dataModal"
         ></ServiceWindow>
     </Teleport>
-    <section class="services">
+    <section class="services" id="myServices">
         <div class="waves">
             <img src="../../assets/img/waves.svg" class="object" onload="SVGInject(this)" />
         </div>

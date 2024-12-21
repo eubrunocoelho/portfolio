@@ -1,5 +1,5 @@
 <template>
-    <MyHeader></MyHeader>
+    <MyHeader :scrollToId="scrollToId"></MyHeader>
     <main>
         <MyPresentation></MyPresentation>
         <MySummary></MySummary>
@@ -32,6 +32,28 @@ export default {
         MyTechnologies,
         MyContact,
         MyFooter,
+    },
+    methods: {
+        scrollToId(elementId) {
+            const targetElement = '#' + elementId;
+
+            const element = document.querySelector(targetElement);
+            const offset = 82 + 20;
+
+            console.log(element);
+
+            if (element) {
+                const position = element.getBoundingClientRect().top + window.scrollY;
+
+                var scrollPosition = position - offset;
+            }
+
+            if (elementId == 'app') {
+                scrollPosition = 0;
+            }
+
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        },
     },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <section class="summary">
+    <section class="summary" id="mySummary">
         <article class="box">
             <div class="cover summary_cover_reveal"></div>
             <div class="content">
