@@ -84,13 +84,20 @@
         }
     }
 
-    .project-box {
+    .project-cover {
         background: var(--projects-img-box-color);
         border-radius: 5px;
         display: block;
         height: 220px;
         margin: 0 0 36px 0;
+        overflow: hidden;
         width: 100%;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
     }
 
     .ellipses {
@@ -139,7 +146,7 @@
             }
         }
 
-        .project-box {
+        .project-cover {
             height: 240px;
             margin: 0 0 0 0;
             width: 290px;
@@ -153,7 +160,7 @@
             column-gap: 44px;
             padding: 0 20px 0 20px;
 
-            .project-box {
+            .project-cover {
                 height: 246px;
                 width: 320px;
             }

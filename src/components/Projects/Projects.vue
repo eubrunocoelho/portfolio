@@ -26,11 +26,20 @@
             >
                 <!-- The first project must have the scrollreveal selectors -->
                 <swiper-slide class="project">
-                    <ProjectMinimalistPersonalPage></ProjectMinimalistPersonalPage>
+                    <ProjectTodoGraphQLAPI></ProjectTodoGraphQLAPI>
                 </swiper-slide>
                 <!-- Following projects should not have scrollreveal selectors -->
                 <swiper-slide class="project">
-                    <ProjectTodoGraphQLAPI></ProjectTodoGraphQLAPI>
+                    <ProjectAwardTheme></ProjectAwardTheme>
+                </swiper-slide>
+                <swiper-slide class="project">
+                    <ProjectMinimalistPersonalPage></ProjectMinimalistPersonalPage>
+                </swiper-slide>
+                <swiper-slide class="project">
+                    <ProjectMangaSKY></ProjectMangaSKY>
+                </swiper-slide>
+                <swiper-slide class="project">
+                    <ProjectMangaSKYTheme></ProjectMangaSKYTheme>
                 </swiper-slide>
             </swiper>
         </div>
@@ -53,8 +62,11 @@ import { initScrollReveal, revealComponentElements } from '../../utils/initScrol
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { ref } from 'vue';
 
-import ProjectMinimalistPersonalPage from './project/MinimalistPersonalPage.vue';
 import ProjectTodoGraphQLAPI from './project/TodoGraphQLAPI.vue';
+import ProjectAwardTheme from './project/AwardTheme.vue';
+import ProjectMinimalistPersonalPage from './project/MinimalistPersonalPage.vue';
+import ProjectMangaSKY from './project/MangaSKY.vue';
+import ProjectMangaSKYTheme from './project/MangaSKYTheme.vue';
 
 import 'swiper/css';
 
@@ -63,8 +75,11 @@ export default {
     components: {
         Swiper,
         SwiperSlide,
-        ProjectMinimalistPersonalPage,
         ProjectTodoGraphQLAPI,
+        ProjectAwardTheme,
+        ProjectMinimalistPersonalPage,
+        ProjectMangaSKY,
+        ProjectMangaSKYTheme,
     },
     setup() {
         const swiperRef = ref(null);
