@@ -84,7 +84,24 @@ export default {
     mounted() {
         const scrollReveal = initScrollReveal();
 
-        const customScrollReveal = [{ selector: '.service_reveal', config: { interval: 400 } }];
+        const customScrollReveal = [
+            {
+                selector: '.service_reveal',
+                config: { interval: 400 },
+            },
+            {
+                selector: '.service_icon_reveal',
+                config: { delay: 300, distance: '0px', easing: 'ease-in-out', opacity: 0, origin: 'center' },
+            },
+            {
+                selector: '.service_title_reveal',
+                config: { delay: 400, distance: '60px', origin: 'left' },
+            },
+            {
+                selector: '.service_link_reveal',
+                config: { delay: 400, distance: '20px', origin: 'left' },
+            },
+        ];
 
         revealComponentElements(scrollReveal, customScrollReveal);
     },
