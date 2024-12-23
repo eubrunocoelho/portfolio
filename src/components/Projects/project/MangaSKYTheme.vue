@@ -30,6 +30,6 @@
 
 <script>
 export default {
-    name: 'ProjectMangaSKYTheme',
+    name: 'ProjectMangasSKYTheme',
 };
 </script>

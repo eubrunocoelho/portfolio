@@ -39,6 +39,6 @@
 
 <script>
 export default {
-    name: 'ProjectMangaSKY',
+    name: 'ProjectMangasSKY',
 };
 </script>
