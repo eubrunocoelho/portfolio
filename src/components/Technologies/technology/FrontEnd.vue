@@ -15,7 +15,7 @@
                 <img src="../../../assets/img/languages/jquery.svg" class="language" alt="jQuery" title="jQuery" />
             </div>
             <div class="technology-box">
-                <img src="../../../assets/img/languages/vuejs.svg" class="language" alt="Vue.js 3" title="Vue.js 3" />
+                <img src="../../../assets/img/languages/vuejs.svg" class="language" alt="Vue.js" title="Vue.js" />
             </div>
             <div class="technology-box">
                 <img src="../../../assets/img/languages/sass.svg" class="language" alt="Sass" title="Sass" />
