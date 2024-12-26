@@ -3,9 +3,10 @@
         <img src="../../../assets/img/projects/mangasky-firecms.png" />
     </div>
     <div class="about">
-        <h1 class="title">mangaSKY & fireCMS</h1>
+        <h1 class="title">mangaSKY & FireCMS</h1>
         <p class="text">
-            Projeto de website para disponibilizar leituras de mangás, HQs, manhuas\manhwas e web-toons online.
+            mangáSKY é um website que disponibiliza leituras de mangás, HQs, manhuas\manhwas e web-toons online. FireCMS
+            é um dashboard para gerenciar o conteúdo do site.
         </p>
         <ul class="languages">
             <li class="language-box">

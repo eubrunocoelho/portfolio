@@ -5,8 +5,8 @@
     <div class="about">
         <h1 class="title">Minimalist Personal Page</h1>
         <p class="text">
-            Página pessoal com um estilo minimalista, desenvolvida para mostrar as tecnologias que eu estava estudando e
-            um formulário para contato. (Desatualizado)
+            Página pessoal com um estilo minimalista, desenvolvida para mostrar as tecnologias de estudo e um formulário
+            para contato. (Desatualizado)
         </p>
         <ul class="languages">
             <li class="language-box">
