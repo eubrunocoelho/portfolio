@@ -69,7 +69,8 @@
         </div>
         <button class="btn btn-primary button_reveal" :disabled="submitStatus === 'OK'">Enviar Mensagem</button>
     </form>
-    <SuccessMessage :submitStatus="submitStatus"></SuccessMessage>
+    <ResponseLoading v-if="submitStatus === 'PENDING'"></ResponseLoading>
+    <ResponseMessage :submitStatus="submitStatus"></ResponseMessage>
 </template>
 
 <script>
@@ -77,13 +78,14 @@ import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
 import { required, minLength, maxLength, email, helpers } from '@vuelidate/validators';
 
+import ResponseLoading from './loading/Loading.vue';
 import ErrorMessage from './messages/ErrorMessage.vue';
-import SuccessMessage from './messages/SuccessMessage.vue';
-import { sendMessage } from '../../../services/api.js';
+import ResponseMessage from './messages/ResponseMessage.vue';
+import { sendMessage } from '../../../services/emailAPI.js';
 
 export default {
     name: 'ContactForm',
-    components: { ErrorMessage, SuccessMessage },
+    components: { ResponseLoading, ErrorMessage, ResponseMessage },
     setup() {
         const state = reactive({
             name: '',
@@ -146,9 +148,13 @@ export default {
             this.v$.$touch();
 
             if (!this.v$.$invalid) {
+                this.submitStatus = 'PENDING';
+
                 const sendResponse = await sendMessage({ ...this.state });
 
-                console.log(sendResponse);
+                const sendStatus = sendResponse.statusCode !== 200 ? 'ERR' : 'OK';
+
+                this.submitStatus = sendStatus;
             }
         },
     },
