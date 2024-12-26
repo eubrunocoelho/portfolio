@@ -79,6 +79,7 @@ import { required, minLength, maxLength, email, helpers } from '@vuelidate/valid
 
 import ErrorMessage from './messages/ErrorMessage.vue';
 import SuccessMessage from './messages/SuccessMessage.vue';
+import { sendMessage } from '../../../services/api.js';
 
 export default {
     name: 'ContactForm',
@@ -138,22 +139,16 @@ export default {
         return { state, v$ };
     },
     data() {
-        return {
-            submitStatus: null,
-        };
+        return { submitStatus: null };
     },
     methods: {
         async submitForm() {
-            console.log('submit!');
-
             this.v$.$touch();
 
             if (!this.v$.$invalid) {
-                this.submitStatus = 'PENDING';
+                const sendResponse = await sendMessage({ ...this.state });
 
-                setTimeout(() => {
-                    this.submitStatus = 'OK';
-                }, 500);
+                console.log(sendResponse);
             }
         },
     },
