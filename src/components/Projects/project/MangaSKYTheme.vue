@@ -5,7 +5,7 @@
     <div class="about">
         <h1 class="title">mangaSKY</h1>
         <p class="text">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit hendrerit.
+            Tema de website desenvolvido para sites de leitura de mangás, manhuas\manhwas, e web-toons online.
         </p>
         <ul class="languages">
             <li class="language-box">

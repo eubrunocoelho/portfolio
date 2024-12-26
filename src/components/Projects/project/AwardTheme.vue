@@ -4,9 +4,7 @@
     </div>
     <div class="about">
         <h1 class="title">Award Theme</h1>
-        <p class="text">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit hendrerit.
-        </p>
+        <p class="text">Tema de website para servidores privados do MMORPG de MU Online.</p>
         <ul class="languages">
             <li class="language-box">
                 <img src="../../../assets/img/languages/html.svg" class="language" />

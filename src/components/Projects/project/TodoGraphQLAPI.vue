@@ -5,7 +5,8 @@
     <div class="about">
         <h1 class="title project_title_reveal">Todo GraphQL API</h1>
         <p class="text project_text_languages_reveal">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit hendrerit.
+            API de pendências onde as tarefas estão disponibilizadas apenas para seus próprios usuários, contando também
+            com um sistema de autenticação JWT para garantir a segurança dos dados. (Projeto Pessoal)
         </p>
         <ul class="languages project_text_languages_reveal">
             <li class="language-box">

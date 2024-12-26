@@ -5,7 +5,7 @@
     <div class="about">
         <h1 class="title">mangaSKY & fireCMS</h1>
         <p class="text">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat eget massa varius primis elit hendrerit.
+            Projeto de website para disponibilizar leituras de mangás, HQs, manhuas\manhwas e web-toons online.
         </p>
         <ul class="languages">
             <li class="language-box">
