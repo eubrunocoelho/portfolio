@@ -40,12 +40,7 @@ export default {
             this.$emit('update:viewModal', false);
             this.$emit('update:viewWindow', false);
         },
-
-        debug() {
-            console.log(this.dataModal);
-        },
     },
-    mounted() {},
 };
 </script>
 
