@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const http = axios.create({ baseURL: 'http://localhost:3000/email/', timeout: 5000 });
+const http = axios.create({ baseURL: 'http://localhost:3000/' });
 
 http.interceptors.response.use(
     (response) => {
@@ -13,16 +13,16 @@ http.interceptors.response.use(
 
 export const sendMessage = async (data) => {
     return await http
-        .post('send', data)
+        .post('email/send', data)
         .then((response) => {
             return {
-                message: response,
+                response: response,
                 statusCode: 200,
             };
         })
         .catch((error) => {
             return {
-                message: error,
+                response: error,
                 statusCode: 400,
             };
         });
