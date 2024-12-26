@@ -8,11 +8,13 @@
                     <h1 class="title summary_title_reveal">Bruno Coelho</h1>
                 </hgroup>
                 <div class="about">
-                    <h1 class="description summary_description_reveal">Full-Stack Developer & UI Designer</h1>
+                    <h1 class="description summary_description_reveal">UI Designer & Full-Stack Developer</h1>
                     <p class="text summary_text_social_reveal">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis.
+                        Sou UI Designer & Desenvolvedor Full-Stack, dedicado a criar soluções para web que atendam às
+                        expectativas do cliente e as necessidades do usuário. Tenho experiência com diversas
+                        tecnologias, construindo aplicações completas, desde o banco de dados até a interface do
+                        usuário. Meu objetivo é entregar projetos que seguem as expectativas dos clientes, oferecendo
+                        experiências intuitivas e agradavéis aos usuários.
                     </p>
                 </div>
                 <ul class="social summary_text_social_reveal">

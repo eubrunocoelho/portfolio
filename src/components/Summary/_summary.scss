@@ -57,7 +57,7 @@
         .about {
             color: var(--summary-box-about-text-color);
             font-family: var(--font-archivo);
-            margin: 0 0 20px 0;
+            margin: 0 0 18px 0;
 
             .description {
                 font-size: 22px;
@@ -68,7 +68,8 @@
             .text {
                 font-size: 20px;
                 font-weight: 200;
-                margin: 0 0 20px 0;
+                line-height: 1.16;
+                margin: 0 0 18px 0;
             }
         }
 
@@ -184,7 +185,7 @@
 
             .content {
                 flex: 1;
-                margin: 46px 0 0 0;
+                margin: 20px 0 0 0;
             }
 
             .title-group {

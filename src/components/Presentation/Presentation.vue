@@ -2,12 +2,12 @@
     <section class="presentation" id="presentationRef">
         <div class="wrapper">
             <hgroup class="title-group title_reveal">
-                <h1 class="title">Lorem Ipsum</h1>
-                <h2 class="subtitle">Lorem ipsum dolor</h2>
+                <h1 class="title">Bruno Coelho</h1>
+                <h2 class="subtitle">UI Designer & Full-Stack Developer</h2>
             </hgroup>
             <p class="text presentation_reveal">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Freelancer buscando criar experiências digitais. Combinando tecnologia, criatividade e design,
+                desenvolvo soluções web que colocam o usuário em primeiro lugar.
             </p>
             <button class="btn btn-primary button_reveal">Solicitar Serviço</button>
         </div>
