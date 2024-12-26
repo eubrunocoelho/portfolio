@@ -30,6 +30,12 @@
     }
 }
 
+@keyframes loadSpinner {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 @keyframes fadeWindow {
     from {
         opacity: 0;
