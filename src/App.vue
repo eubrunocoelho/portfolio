@@ -1,7 +1,7 @@
 <template>
     <MyHeader :scrollToId="scrollToId"></MyHeader>
     <main>
-        <MyPresentation></MyPresentation>
+        <MyPresentation :scrollToId="scrollToId"></MyPresentation>
         <MySummary></MySummary>
         <MyServices></MyServices>
         <MyProjects></MyProjects>

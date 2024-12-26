@@ -9,7 +9,9 @@
                 Freelancer buscando criar experiências digitais. Combinando tecnologia, criatividade e design desenvolvo
                 soluções web que colocam o usuário em primeiro lugar.
             </p>
-            <button class="btn btn-primary button_reveal">Solicitar Serviço</button>
+            <button class="btn btn-primary button_reveal" @click="scrollToId('contactRef', 60)">
+                Solicitar Serviço
+            </button>
         </div>
     </section>
 </template>
@@ -19,6 +21,12 @@ import { initScrollReveal, revealComponentElements } from '../../utils/initScrol
 
 export default {
     name: 'MyPresentation',
+    props: {
+        scrollToId: {
+            type: Function,
+            required: true,
+        },
+    },
     mounted() {
         const scrollReveal = initScrollReveal();
 
