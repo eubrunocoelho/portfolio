@@ -22,7 +22,14 @@
                 <img src="../../../assets/img/languages/sass.svg" class="language" />
             </li>
         </ul>
-        <a href="#" class="show-more">Exibir mais</a>
+        <a
+            href="https://github.com/eubrunocoelho/minimalist-personal-page"
+            class="show-more"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Exibir mais
+        </a>
     </div>
 </template>
 

@@ -3,7 +3,7 @@
         <img src="../../../assets/img/projects/award-theme.png" />
     </div>
     <div class="about">
-        <h1 class="title">Award Theme</h1>
+        <h1 class="title">MU Award Theme</h1>
         <p class="text">Tema de website para servidores privados do MMORPG de MU Online.</p>
         <ul class="languages">
             <li class="language-box">
@@ -22,7 +22,9 @@
                 <img src="../../../assets/img/languages/jquery.svg" class="language" />
             </li>
         </ul>
-        <a href="#" class="show-more">Exibir mais</a>
+        <a href="https://github.com/eubrunocoelho/mu-award" class="show-more" target="_blank" rel="noopener noreferrer">
+            Exibir mais
+        </a>
     </div>
 </template>
 

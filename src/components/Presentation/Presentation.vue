@@ -6,8 +6,8 @@
                 <h2 class="subtitle">UI Designer & Full-Stack Developer</h2>
             </hgroup>
             <p class="text presentation_reveal">
-                Freelancer buscando criar experiências digitais. Combinando tecnologia, criatividade e design desenvolvo
-                soluções web que colocam o usuário em primeiro lugar.
+                UI Designer & Full-Stack Developer buscando criar experiências digitais. Ao combinar tecnologia,
+                criatividade e design crio soluções para a web que colocam o usuário em primeiro lugar.
             </p>
             <button class="btn btn-primary button_reveal" @click="scrollToId('contactRef', 60)">
                 Solicitar Serviço

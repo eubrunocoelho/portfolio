@@ -10,32 +10,42 @@
                 <div class="about">
                     <h1 class="description summary_description_reveal">UI Designer & Full-Stack Developer</h1>
                     <p class="text summary_text_social_reveal">
-                        Atuo como UI Designer & Desenvolvedor Full-Stack, dedicado a criar soluções para web que atendam
-                        às expectativas dos clientes e as necessidades dos usuários.<br />
-                        Tenho experiência com diversas tecnologias, construindo aplicações completas, desde o banco de
-                        dados até a interface do usuário. Meu objetivo é entregar projetos que seguem as expectativas
-                        dos clientes, oferecendo experiências intuitivas e agradavéis aos usuários.
+                        Atualmente atuo como Freelancer, dedicado a criar soluções para a web que atendam às
+                        expectativas do cliente e as necessidades do usuário. Tenho experiência com diversas
+                        tecnologias, construindo aplicações desde o banco de dados até a interface do usuário. Meu
+                        objetivo é entregar projetos que seguem as expectativas do cliente, oferencendo experiências
+                        intuitivas e agradavéis aos usuários.
                     </p>
                 </div>
                 <ul class="social summary_text_social_reveal">
                     <li>
-                        <a href="#" class="social-box">
+                        <a
+                            href="https://github.com/eubrunocoelho"
+                            class="social-box"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ion-icon name="logo-github" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box">
+                        <a
+                            href="https://www.linkedin.com/in/eubrunocoelho"
+                            class="social-box"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box">
+                        <a
+                            href="https://www.deviantart.com/eubrunocoelho"
+                            class="social-box"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ion-icon name="logo-deviantart" class="social-icon"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-box">
-                            <ion-icon name="logo-discord" class="social-icon"></ion-icon>
                         </a>
                     </li>
                 </ul>

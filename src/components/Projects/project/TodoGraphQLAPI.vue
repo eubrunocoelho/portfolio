@@ -22,7 +22,14 @@
                 <img src="../../../assets/img/languages/mongodb.svg" class="language" />
             </li>
         </ul>
-        <a href="#" class="show-more project_link_reveal">Exibir mais</a>
+        <a
+            href="https://github.com/eubrunocoelho/todo-graphql"
+            class="show-more project_link_reveal"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Exibir mais
+        </a>
     </div>
 </template>
 

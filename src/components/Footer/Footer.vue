@@ -4,23 +4,33 @@
             <div class="container">
                 <ul class="social">
                     <li>
-                        <a href="#" class="social-box social_reveal">
+                        <a
+                            href="https://github.com/eubrunocoelho"
+                            class="social-box social_reveal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ion-icon name="logo-github" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box social_reveal">
+                        <a
+                            href="https://www.linkedin.com/in/eubrunocoelho"
+                            class="social-box social_reveal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-box social_reveal">
+                        <a
+                            href="https://www.deviantart.com/eubrunocoelho"
+                            class="social-box social_reveal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ion-icon name="logo-deviantart" class="social-icon"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-box social_reveal">
-                            <ion-icon name="logo-discord" class="social-icon"></ion-icon>
                         </a>
                     </li>
                 </ul>

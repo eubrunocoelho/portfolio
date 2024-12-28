@@ -50,8 +50,7 @@ export default {
                     'Criação de UI (Interface do Usuário).',
                     'Criatividade.',
                     'Design atrativo.',
-                    'Experiência com Adobe Photoshop.',
-                    'Experiência com Adobe Illustrator.',
+                    'Adobe Photoshop, Adobe Illustrator.',
                 ],
             },
 
@@ -59,11 +58,12 @@ export default {
                 title: 'Front-End<br />Developer',
                 skills: [
                     'Temas para diferentes disposítivos.',
-                    'Recursos interativos e intuitivos.',
+                    'Recursos intuitivos.',
                     'Componentes bem definidos.',
                     'Fidelidade com o tema apresentado.',
                     'Metodoligias de desenvolvimento.',
                     'Suporte e orientação.',
+                    'HTML5, CSS3, JavaScript, jQuery, Vue.js, Sass.',
                 ],
             },
 
@@ -74,7 +74,10 @@ export default {
                     'Resoluções de problemas.',
                     'Código bem escrito e organizado.',
                     'Padrões de Projeto.',
+                    'Arquitetura MVC, Arquitetura Modular.',
                     'Banco de dados robusto e normalizado.',
+                    'ORMs.',
+                    'PHP, Laravel, Node.js, TypeScript, GraphQL, MySQL, MongoDB.',
                 ],
             },
 
