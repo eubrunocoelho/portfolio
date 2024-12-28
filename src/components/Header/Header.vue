@@ -11,7 +11,9 @@
             <button class="open-menu">
                 <font-awesome-icon :icon="['fas', 'bars']" class="open-menu--icon" @click="toggleSidebar" />
             </button>
-            <div class="logo-wrapper"></div>
+            <div class="logo-wrapper">
+                <img src="../../assets/img/logo.svg" @click="scrollToId('app')" />
+            </div>
             <nav class="navigation">
                 <ul>
                     <li>
