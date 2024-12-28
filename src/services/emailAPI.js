@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const http = axios.create({ baseURL: 'http://localhost:3000/' });
+const http = axios.create({ baseURL: 'https://nodemailer-nestjs-api.vercel.app/' });
 
 http.interceptors.response.use(
     (response) => {
