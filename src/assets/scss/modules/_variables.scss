@@ -7,6 +7,15 @@
 :root {
     // APP
     --background-color: #121214;
+    --app-text-color: #ffffff;
+
+    // SCROLL BAR
+    --scrollbar-track-color: #1f1f1f;
+    --scrollbar-thumb-color: #0f4f9f;
+
+    // SELECTION
+    --selection-background-color: #0f4f9f;
+    --selection-text-color: #ffffff;
 
     // SHOW MORE LINK
     --show-more-link-color: #007bff;
@@ -19,7 +28,6 @@
     --header-background-color: #0c0c0d;
     --header-border-color: #151518;
     --header-open-icon-color: #ffffff;
-    --header-logo-box-color: #0e0e10; //
     --header-nav-link-color: #b5bcc5;
 
     // SIDEBAR
@@ -139,6 +147,9 @@
 
     // HOVER - APP
     --hover-show-more-chevron-color: invert(27%) sepia(98%) saturate(1479%) hue-rotate(193deg) brightness(86%) contrast(111%);
+
+    // HOVER - SCROLL BAR
+    --hover-scrollbar-thumb-color: #007bff;
 
     // HOVER - HEADER
     --hover-header-nav-link-color: #ffffff;

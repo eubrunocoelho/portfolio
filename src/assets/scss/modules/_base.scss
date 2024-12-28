@@ -14,6 +14,30 @@
 
 body {
     background: var(--background-color);
+    color: var(--app-text-color);
+    font-family: var(--font-rajdhani);
     height: 100%;
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+
+    &:hover {
+        background: var(--hover-scrollbar-thumb-color);
+    }
+}
+
+::selection {
+    color: var(--selection-text-color);
+    background: var(--selection-background-color);
 }
