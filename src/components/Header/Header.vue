@@ -12,7 +12,7 @@
                 <font-awesome-icon :icon="['fas', 'bars']" class="open-menu--icon" @click="toggleSidebar" />
             </button>
             <div class="logo-wrapper">
-                <img src="../../assets/img/logo.svg" @click="scrollToId('app')" />
+                <a href="https://eubrunocoelho.vercel.app/"><img src="../../assets/img/logo.svg" /></a>
             </div>
             <nav class="navigation">
                 <ul>

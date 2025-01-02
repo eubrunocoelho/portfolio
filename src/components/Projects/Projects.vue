@@ -1,6 +1,6 @@
 <template>
     <section class="projects">
-        <h1 class="main-title main-title--spacing title_reveal" id="projectsRef">Projetos<span class="dot">/</span></h1>
+        <h1 class="main-title main-title--spacing title_reveal" id="projectsRef">Projetos<span class="dot">|</span></h1>
         <div class="container">
             <div class="previous" @click="swiper.slidePrev()">
                 <font-awesome-icon
@@ -132,7 +132,7 @@ export default {
             },
             {
                 selector: '.project_title_reveal',
-                config: { delay: 300, distance: '20px' },
+                config: { delay: 300, distance: '20px', origin: 'left' },
             },
             {
                 selector: '.project_text_languages_reveal',

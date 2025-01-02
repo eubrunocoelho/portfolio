@@ -108,10 +108,6 @@ export default {
             },
             email: {
                 required: helpers.withMessage('Por favor, insira seu e-mail.', required),
-                minLength: helpers.withMessage(
-                    ({ $params }) => `O e-mail ter no mínimo ${$params.min} caracteres.`,
-                    minLength(12),
-                ),
                 maxLength: helpers.withMessage(
                     ({ $params }) => `O e-mail ter no máximo ${$params.max} caracteres.`,
                     maxLength(128),

@@ -12,7 +12,7 @@
         </div>
         <div class="content">
             <h1 class="main-title main-title--spacing title_reveal" id="servicesRef">
-                Serviços<span class="dot">/</span>
+                Serviços<span class="dot">|</span>
             </h1>
             <div class="wrapper">
                 <ServiceUIDesigner :toggleUIDesigner="toggleUIDesigner"></ServiceUIDesigner>
