@@ -12,6 +12,7 @@
     -   [Estilização](#estilização)
     -   [IDE, Versionamento, Deploy](#ide-versionamento-deploy)
 -   [Instalação](#instalação)
+    -   [Requisitos](#requisitos)
 -   [Contato](#contato)
 
 ## Sobre
