@@ -298,6 +298,7 @@
         .wrapper {
             column-gap: 20px;
             flex-direction: row;
+            max-width: 825px;
         }
 
         .container {
@@ -322,7 +323,6 @@
     .contact {
         .wrapper {
             column-gap: 40px;
-            max-width: 825px;
         }
     }
 }
