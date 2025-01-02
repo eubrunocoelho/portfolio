@@ -33,13 +33,13 @@
                     <ProjectAwardTheme></ProjectAwardTheme>
                 </swiper-slide>
                 <swiper-slide class="project">
-                    <ProjectMinimalistPersonalPage></ProjectMinimalistPersonalPage>
-                </swiper-slide>
-                <swiper-slide class="project">
                     <ProjectMangaSKY></ProjectMangaSKY>
                 </swiper-slide>
                 <swiper-slide class="project">
                     <ProjectMangaSKYTheme></ProjectMangaSKYTheme>
+                </swiper-slide>
+                <swiper-slide class="project">
+                    <ProjectMinimalistPersonalPage></ProjectMinimalistPersonalPage>
                 </swiper-slide>
             </swiper>
         </div>
