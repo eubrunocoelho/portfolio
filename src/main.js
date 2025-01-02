@@ -4,6 +4,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { createApp } from 'vue';
+import { createMetaManager } from 'vue-meta';
 
 import App from './App.vue';
 
@@ -14,7 +15,13 @@ library.add(fas, fab, far);
 dom.watch();
 
 const app = createApp(App);
+
+const metaManager = createMetaManager();
+
+app.use(metaManager);
+
 app.config.ignoredElements = [/^ion-/];
+
 app.component('font-awesome-icon', FontAwesomeIcon);
 
 // IonIcons Inject

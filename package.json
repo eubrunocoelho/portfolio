@@ -18,7 +18,8 @@
         "axios": "^1.7.9",
         "scrollreveal": "^4.0.9",
         "swiper": "^11.1.15",
-        "vue": "^3.2.13"
+        "vue": "^3.2.13",
+        "vue-meta": "^3.0.0-alpha.10"
     },
     "devDependencies": {
         "@vue/cli-plugin-eslint": "~5.0.0",

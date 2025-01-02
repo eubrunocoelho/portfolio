@@ -33,6 +33,33 @@ export default {
         MyContact,
         MyFooter,
     },
+    metaInfo: {
+        title: 'Bruno Coelho - @eubrunocoelho',
+        meta: [
+            {
+                name: 'description',
+                content:
+                    'UI Designer & Full-Stack Developer buscando criar experiências digitais. Ao combinar tecnologia, criatividade e design crio soluções para a web que colocam o usuário em primeiro lugar.',
+            },
+            {
+                property: 'og:title',
+                content: 'Bruno Coelho - Portfolio',
+            },
+            {
+                property: 'og:description',
+                content:
+                    'UI Designer & Full-Stack Developer buscando criar experiências digitais. Ao combinar tecnologia, criatividade e design crio soluções para a web que colocam o usuário em primeiro lugar.',
+            },
+            {
+                property: 'og:type',
+                content: 'portfolio',
+            },
+            {
+                property: 'og:url',
+                content: 'https://eubrunocoelho.vercel.app',
+            },
+        ],
+    },
     methods: {
         scrollToId(elementId, offset) {
             const targetElement = '#' + elementId;
