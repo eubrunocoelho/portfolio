@@ -58,15 +58,16 @@
 </template>
 
 <script>
-import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { ref } from 'vue';
 
+import { initScrollReveal, revealComponentElements } from '../../utils/initScrollReveal';
+
 import ProjectTodoGraphQLAPI from './project/TodoGraphQLAPI.vue';
 import ProjectAwardTheme from './project/AwardTheme.vue';
-import ProjectMinimalistPersonalPage from './project/MinimalistPersonalPage.vue';
 import ProjectMangaSKY from './project/MangaSKY.vue';
 import ProjectMangaSKYTheme from './project/MangaSKYTheme.vue';
+import ProjectMinimalistPersonalPage from './project/MinimalistPersonalPage.vue';
 
 import 'swiper/css';
 

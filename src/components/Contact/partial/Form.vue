@@ -74,8 +74,8 @@
 </template>
 
 <script>
-import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
+import { reactive } from 'vue';
 import { required, minLength, maxLength, email, helpers } from '@vuelidate/validators';
 
 import ResponseLoading from './loading/Loading.vue';
