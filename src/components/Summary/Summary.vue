@@ -14,7 +14,7 @@
                         expectativas do cliente e as necessidades do usuário. Tenho experiência com diversas
                         tecnologias, construindo aplicações desde o banco de dados até a interface do usuário. Meu
                         objetivo é entregar projetos que seguem as expectativas do cliente, oferencendo experiências
-                        intuitivas e agradavéis aos usuários.
+                        intuitivas e agradáveis aos usuários.
                     </p>
                 </div>
                 <ul class="social summary_text_social_reveal">
